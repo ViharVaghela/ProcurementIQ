@@ -3,6 +3,7 @@
   "maxItemsPerFeed": 12,
   "recencyWindowDays": 30,
   "amnsThreshold": 40,
+  "relevanceFloor": 55,
   "feeds": [
     {
       "name": "worldsteel",

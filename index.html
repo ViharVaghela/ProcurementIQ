@@ -292,8 +292,8 @@ footer{border-top:1px solid var(--border);padding:13px 20px;margin-top:40px;disp
     <button class="navbtn" id="nav-risk" onclick="showPage('risk')"><span>⚠</span><span class="nav-label">Risk Center</span></button>
     <button class="navbtn" id="nav-saved" onclick="showPage('saved')"><span>★</span><span class="nav-label">Saved</span></button>
   </div>
-  <div style="display:flex;align-items:center;gap:5px;flex-shrink:0;cursor:pointer" id="mode-indicator" onclick="cycleMode()" title="Click to change content mode">
-    <div class="live-dot" id="mode-dot"></div><span class="live-txt" id="mode-txt">DEMO CONTENT</span>
+  <div style="display:flex;align-items:center;gap:5px;flex-shrink:0" id="mode-indicator" title="Live feed status — driven by manifest.json">
+    <div class="live-dot" id="mode-dot"></div><span class="live-txt" id="mode-txt">LIVE RSS</span>
   </div>
 </nav>
 <div id="ticker-bar"><div class="ticker-label">MARKET</div><div class="ticker-track"><div class="ticker-inner" id="ticker-inner"></div></div></div>
@@ -367,11 +367,10 @@ footer{border-top:1px solid var(--border);padding:13px 20px;margin-top:40px;disp
   <!-- Watchlist bar (shown when watchlist is active) -->
   <div id="watchlist-bar" style="display:none"></div>
 
-  <!-- RSS Architecture Notice -->
-  <div class="rss-notice" id="rss-notice">
-    <div id="rss-mode-line" style="margin-bottom:5px"></div>
-    <strong>Intelligence Feed Architecture</strong> — Configured for live RSS integration. Sources include Spend Matters, Supply Chain Dive, Reuters Business, Logistics Management, IndustryWeek, plus steel-sector feeds (S&P Platts, SteelOrbis, Fastmarkets, worldsteel, Drewry, Mining.com). <span style="color:var(--text3)">Click the mode indicator (top-right) to switch between Demo, Hybrid, and Live RSS.</span>
-    <button onclick="document.getElementById('rss-notice').style.display='none'" style="float:right;background:none;border:none;color:var(--text3);cursor:pointer;font-size:11px;margin-left:8px">✕</button>
+  <!-- Governance & Feed Health (manifest-driven) -->
+  <div class="rss-notice" id="rss-notice" style="padding:0;border:none;background:none">
+    <div id="rss-mode-line" style="margin-bottom:8px"></div>
+    <div id="governance-panel"></div>
   </div>
 
   <!-- Feed Status Bar -->
@@ -441,14 +440,14 @@ footer{border-top:1px solid var(--border);padding:13px 20px;margin-top:40px;disp
 
 </main>
 <footer>
-  <div>PROCUREMENT<span style="color:var(--teal)">IQ</span> v1.3 — Procurement Intelligence & Decision Support · AMNS Relevance Engine · RSS-Ready</div>
+  <div>PROCUREMENT<span style="color:var(--teal)">IQ</span> v2.1 — Procurement Intelligence & Decision Support · AMNS Relevance Engine · Live RSS</div>
   <div style="display:flex;gap:12px;flex-wrap:wrap">◈ Dashboard &nbsp;◉ Intelligence &nbsp;📊 War Room &nbsp;🏭 Markets &nbsp;⚠ Risk</div>
   <div style="display:flex;align-items:center;gap:5px"><div style="width:5px;height:5px;border-radius:50%;background:var(--green)"></div>All systems operational</div>
 </footer>
 <script>
 // ═══════════════════════════════════════════════════════════════════════════
 // PROCUREMENTIQ v1.1 — Procurement Intelligence Platform
-// No AI · No paid APIs · No fetch() · RSS-ready architecture
+// No AI · No paid APIs · Live RSS via build-time pipeline
 // Intelligence sourced from public procurement publications
 // ═══════════════════════════════════════════════════════════════════════════
 
@@ -536,7 +535,10 @@ const EMERGENCY_SEED=[{"id":1,"type":"RISK SIGNAL","urgency":"ACTION","category"
 // through this one helper, so the change is isolated.
 function articleId(a){ return a.id; }
 
-let DATA_STATUS={ ok:true, failed:[], usedSeed:false, generatedAt:null };
+let DATA_STATUS={ ok:true, failed:[], usedSeed:false, generatedAt:null,
+  manifestStatus:null, articleCount:null, feedsAttempted:null, feedsSucceeded:null,
+  feedsFailed:[], oldestArticle:null, newestArticle:null, idMigrationMap:null,
+  feedHealth:[], sourceDistribution:null, publishedToday:null, rejected:null };
 
 async function fetchJSON(path){
   const res = await fetch(path, {cache:"no-store"});
@@ -594,8 +596,16 @@ async function loadData(){
     if(m){
       if(m.generatedAt) DATA_STATUS.generatedAt=m.generatedAt;
       DATA_STATUS.manifestStatus=m.status||null;
-      DATA_STATUS.articleCount=m.articleCount;
+      DATA_STATUS.articleCount=(typeof m.articleCount==="number")?m.articleCount:null;
+      DATA_STATUS.feedsAttempted=(typeof m.feedsAttempted==="number")?m.feedsAttempted:null;
+      DATA_STATUS.feedsSucceeded=(typeof m.feedsSucceeded==="number")?m.feedsSucceeded:null;
       DATA_STATUS.feedsFailed=m.feedsFailed||[];
+      DATA_STATUS.oldestArticle=m.oldestArticle||null;
+      DATA_STATUS.newestArticle=m.newestArticle||null;
+      DATA_STATUS.feedHealth=Array.isArray(m.feedHealth)?m.feedHealth:[];
+      DATA_STATUS.sourceDistribution=m.sourceDistribution||null;
+      DATA_STATUS.publishedToday=(typeof m.publishedToday==="number")?m.publishedToday:null;
+      DATA_STATUS.rejected=m.rejected||null;
       if(m.idMigrationMap) DATA_STATUS.idMigrationMap=m.idMigrationMap;
     }
   }catch(e){}
@@ -640,12 +650,10 @@ function showLoadingState(){
 }
 function hideLoadingState(){ const d=document.getElementById("piq-loading"); if(d)d.remove(); }
 function reflectDataStatus(){
-  // If any dataset fell back, dim the mode indicator and annotate (no layout change).
+  // The header indicator + governance panel are driven by liveStatus()/applyMode(),
+  // which already reflects offline/degraded/failed. Just notify on fallback.
   if(DATA_STATUS.ok) return;
-  const txt=document.getElementById("mode-txt"), dot=document.getElementById("mode-dot");
-  if(dot){ dot.style.background="#E8B84B"; dot.style.boxShadow="0 0 5px #E8B84B"; }
-  if(txt){ txt.textContent="OFFLINE — BUNDLED DATA"; txt.style.color="#E8B84B"; }
-  if(typeof toast==="function") toast("Some data could not be loaded — showing bundled emergency intelligence.");
+  if(typeof toast==="function") toast("Some data could not be loaded — showing last-good intelligence.");
 }
 
 
@@ -706,29 +714,199 @@ let watchlist=_st.watchlist;
 let activeCat="All",activeFilter="all";
 let refreshSecs={breaking:0,market:240,commodity:720,brief:86400};
 
-// ─── CONTENT MODE (Demo / Hybrid / Live RSS) — clarifies live vs static ──────
-const CONTENT_MODES=[
-  {id:"demo",label:"DEMO CONTENT",color:"#E8B84B",desc:"Curated demonstration intelligence. RSS feeds are configured but not yet live."},
-  {id:"hybrid",label:"HYBRID INTELLIGENCE",color:"#0EA5BE",desc:"Curated intelligence augmented with selected live feeds. Phase-2 transition mode."},
-  {id:"live",label:"LIVE RSS FEED",color:"#00897B",desc:"All intelligence sourced live from configured RSS feeds. (Requires Phase-2 backend integration.)"},
-];
-let contentMode=(()=>{try{return localStorage.getItem("piq_mode")||"demo";}catch(e){return"demo";}})();
-function modeObj(){return CONTENT_MODES.find(m=>m.id===contentMode)||CONTENT_MODES[0];}
+// ─── LIVE STATUS (manifest-driven) ──────────────────────────────────────────
+// The header indicator reflects the REAL pipeline state from manifest.json.
+// No manual toggle, no hardcoded label — status is derived dynamically.
+//   ok       → LIVE RSS      (green)
+//   degraded → DEGRADED      (amber)  some feeds failed
+//   failed   → FEED FAILURE  (red)    last run produced no feeds; serving last-good
+//   (seed/offline fallback)  → OFFLINE (amber)
+function liveStatus(){
+  if(DATA_STATUS.usedSeed || !DATA_STATUS.ok && !DATA_STATUS.manifestStatus)
+    return {id:"offline",label:"OFFLINE",color:"#E8B84B",desc:"Could not load live intelligence — showing bundled data."};
+  const s=DATA_STATUS.manifestStatus;
+  if(s==="failed")   return {id:"failed",  label:"FEED FAILURE",color:"#D32F2F",desc:"Latest refresh failed — showing last good intelligence."};
+  if(s==="degraded") return {id:"degraded",label:"DEGRADED",    color:"#E8B84B",desc:"Live, but one or more feeds failed on the last refresh."};
+  if(s==="ok")       return {id:"live",    label:"LIVE RSS",    color:"#00C853",desc:"All configured feeds ingested live on the last refresh."};
+  // manifest present but unknown status, or no manifest yet
+  return {id:"live",label:"LIVE RSS",color:"#00C853",desc:"Live intelligence feed."};
+}
 function applyMode(){
-  const m=modeObj();
+  const m=liveStatus();
   const dot=document.getElementById("mode-dot");
   const txt=document.getElementById("mode-txt");
-  if(dot)dot.style.background=m.color,dot.style.boxShadow=`0 0 5px ${m.color}`;
-  if(txt)txt.textContent=m.label,txt.style.color=m.color;
+  if(dot){ dot.style.background=m.color; dot.style.boxShadow=`0 0 5px ${m.color}`; }
+  if(txt){ txt.textContent=m.label; txt.style.color=m.color; }
   const rn=document.getElementById("rss-mode-line");
-  if(rn)rn.innerHTML=`<strong style="color:${m.color}">Mode: ${m.label}</strong> — ${esc(m.desc)}`;
+  if(rn)rn.innerHTML=`<strong style="color:${m.color}">${m.label}</strong> — ${esc(m.desc)}`;
+  buildGovernancePanel();
 }
-function cycleMode(){
-  const idx=CONTENT_MODES.findIndex(m=>m.id===contentMode);
-  contentMode=CONTENT_MODES[(idx+1)%CONTENT_MODES.length].id;
-  try{localStorage.setItem("piq_mode",contentMode);}catch(e){}
-  applyMode();
-  toast(`Content mode: ${modeObj().label}`);
+
+// Configured feed roster (mirrors pipeline/feeds.config.json). Per-feed health is
+// derived from manifest.feedsFailed; everything else attempted is treated as live.
+const CONFIGURED_FEEDS=["worldsteel","Mining.com","SteelOrbis","Supply Chain Dive","Reuters Business"];
+const FEED_DISPLAY={"worldsteel":"WorldSteel","Mining.com":"Mining.com","SteelOrbis":"SteelOrbis","Supply Chain Dive":"Supply Chain Dive","Reuters Business":"Reuters"};
+
+// Freshness from a timestamp → {label,color} using 24h / 48h thresholds.
+function freshnessOf(iso){
+  if(!iso) return {label:"UNKNOWN",color:"#9AA4AD",hours:null};
+  const h=(Date.now()-new Date(iso).getTime())/36e5;
+  if(isNaN(h)) return {label:"UNKNOWN",color:"#9AA4AD",hours:null};
+  if(h<=24) return {label:"FRESH",color:"#00C853",hours:h};
+  if(h<=48) return {label:"AGING",color:"#E8B84B",hours:h};
+  return {label:"STALE",color:"#D32F2F",hours:h};
+}
+function agoText(iso){
+  if(!iso) return "—";
+  const h=(Date.now()-new Date(iso).getTime())/36e5;
+  if(isNaN(h)) return "—";
+  if(h<1) return Math.max(1,Math.round(h*60))+" min ago";
+  if(h<48) return Math.round(h)+" hr ago";
+  return Math.round(h/24)+" days ago";
+}
+function fmtDT(iso){
+  if(!iso) return "—";
+  const d=new Date(iso); if(isNaN(d)) return "—";
+  return d.toLocaleString(undefined,{year:"numeric",month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"});
+}
+
+function buildGovernancePanel(){
+  const el=document.getElementById("governance-panel");
+  if(!el) return;
+  const st=liveStatus();
+  const failed=DATA_STATUS.feedsFailed||[];
+  const attempted=(DATA_STATUS.feedsAttempted!=null)?DATA_STATUS.feedsAttempted:CONFIGURED_FEEDS.length;
+  const succeeded=(DATA_STATUS.feedsSucceeded!=null)?DATA_STATUS.feedsSucceeded:(attempted-failed.length);
+  const total=(DATA_STATUS.articleCount!=null)?DATA_STATUS.articleCount:(typeof INTEL_DATA!=="undefined"?INTEL_DATA.length:0);
+  const fresh=freshnessOf(DATA_STATUS.generatedAt);
+  const health=DATA_STATUS.feedHealth||[];
+  const rejected=(DATA_STATUS.rejected&&typeof DATA_STATUS.rejected.total==="number")?DATA_STATUS.rejected.total:null;
+  const today=(DATA_STATUS.publishedToday!=null)?DATA_STATUS.publishedToday:null;
+
+  // ── 1. GOVERNANCE KPI STRIP ───────────────────────────────────────────────
+  const kpi=(label,val,color)=>`<div style="flex:1 1 110px;text-align:center;padding:8px 6px;background:var(--card2);border:1px solid var(--line);border-radius:7px">
+    <div style="font-size:18px;font-weight:700;color:${color||'var(--text1)'};line-height:1.1">${val}</div>
+    <div style="font-size:8.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.4px;margin-top:3px;line-height:1.3">${label}</div></div>`;
+  const kpiStrip=`<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px">
+    ${kpi("Feeds Configured",attempted)}
+    ${kpi("Active Feeds",succeeded,"#00C853")}
+    ${kpi("Failed Feeds",failed.length,failed.length?"#D32F2F":"var(--text1)")}
+    ${kpi("Published Today",today!=null?today:"—")}
+    ${kpi("Rejected (Relevance)",rejected!=null?rejected:"—","#E8B84B")}
+    ${kpi("Manifest Status",st.label,st.color)}
+  </div>`;
+
+  // Per-feed chips (compact summary row)
+  const chips=CONFIGURED_FEEDS.map(name=>{
+    let color="#00C853";
+    if(failed.includes(name)){ color="#D32F2F"; }
+    else if(st.id==="failed"){ color="#9AA4AD"; }
+    return `<div style="display:flex;align-items:center;gap:6px;padding:5px 10px;background:var(--card2);border:1px solid var(--line);border-radius:6px">
+      <span style="width:8px;height:8px;border-radius:50%;background:${color};box-shadow:0 0 5px ${color};flex-shrink:0"></span>
+      <span style="font-size:11px;color:var(--text2);white-space:nowrap">${esc(FEED_DISPLAY[name]||name)}</span>
+    </div>`;
+  }).join("");
+
+  const metric=(label,val,color)=>`<div style="text-align:center;padding:0 14px">
+    <div style="font-size:20px;font-weight:700;color:${color||'var(--text1)'};line-height:1.1">${val}</div>
+    <div style="font-size:9px;color:var(--text3);text-transform:uppercase;letter-spacing:.4px;margin-top:2px">${label}</div></div>`;
+
+  // ── 2. FEED FAILURE DIAGNOSTICS (table) ───────────────────────────────────
+  // Prefer manifest.feedHealth; fall back to a derived view from feedsFailed.
+  const healthRows=(health.length?health:CONFIGURED_FEEDS.map(n=>({
+    name:n, status:failed.includes(n)?"failed":(st.id==="failed"?"unknown":"live"),
+    lastSuccess:null, reason:failed.includes(n)?"Reason Not Available":null
+  }))).map(h=>{
+    const live=h.status==="live";
+    const col=live?"#00C853":(h.status==="failed"?"#D32F2F":"#9AA4AD");
+    const reason=live?"—":(h.reason||"Reason Not Available");
+    return `<tr style="border-top:1px solid var(--line)">
+      <td style="padding:6px 8px;font-size:11px;color:var(--text2)">${esc(FEED_DISPLAY[h.name]||h.name)}</td>
+      <td style="padding:6px 8px;font-size:10px;font-weight:700;color:${col}">${live?"LIVE":h.status.toUpperCase()}</td>
+      <td style="padding:6px 8px;font-size:10px;color:var(--text3)">${agoText(h.lastSuccess)}</td>
+      <td style="padding:6px 8px;font-size:10px;color:${live?'var(--text3)':col}">${esc(reason)}</td>
+    </tr>`;
+  }).join("");
+  const diagnostics=`<div style="background:var(--card);border:1px solid var(--line);border-radius:9px;padding:12px 14px;flex:1 1 420px">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+      <span style="width:9px;height:9px;border-radius:50%;background:${st.color};box-shadow:0 0 6px ${st.color}"></span>
+      <strong style="font-size:12px;letter-spacing:.3px">FEED DIAGNOSTICS</strong>
+    </div>
+    <table style="width:100%;border-collapse:collapse">
+      <thead><tr>
+        <th style="text-align:left;padding:4px 8px;font-size:8.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.4px">Feed</th>
+        <th style="text-align:left;padding:4px 8px;font-size:8.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.4px">Status</th>
+        <th style="text-align:left;padding:4px 8px;font-size:8.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.4px">Last Success</th>
+        <th style="text-align:left;padding:4px 8px;font-size:8.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.4px">Failure Reason</th>
+      </tr></thead>
+      <tbody>${healthRows}</tbody>
+    </table>
+  </div>`;
+
+  // ── 3. INTELLIGENCE SOURCE DISTRIBUTION (auto-derived) ────────────────────
+  // Prefer manifest.sourceDistribution; else derive live from loaded articles.
+  let dist=DATA_STATUS.sourceDistribution;
+  if(!dist && typeof INTEL_DATA!=="undefined"){
+    dist={}; INTEL_DATA.forEach(a=>{const s=a.source||a.rssSource||"Unknown";dist[s]=(dist[s]||0)+1;});
+  }
+  dist=dist||{};
+  const distEntries=Object.entries(dist).sort((a,b)=>b[1]-a[1]);
+  const maxCount=distEntries.length?distEntries[0][1]:1;
+  const distRows=distEntries.map(([src,n])=>{
+    const pct=Math.round((n/maxCount)*100);
+    return `<div style="display:flex;align-items:center;gap:8px;margin-bottom:5px">
+      <span style="font-size:10px;color:var(--text2);width:120px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(src)}</span>
+      <span style="flex:1;height:8px;background:var(--card2);border-radius:4px;overflow:hidden"><span style="display:block;height:100%;width:${pct}%;background:var(--teal)"></span></span>
+      <span style="font-size:10px;font-weight:700;color:var(--text1);width:28px;text-align:right">${n}</span>
+    </div>`;
+  }).join("")||`<div style="font-size:10px;color:var(--text3)">No source data available.</div>`;
+  const distribution=`<div style="background:var(--card);border:1px solid var(--line);border-radius:9px;padding:12px 14px;flex:1 1 300px">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+      <span style="width:9px;height:9px;border-radius:50%;background:var(--teal);box-shadow:0 0 6px var(--teal)"></span>
+      <strong style="font-size:12px;letter-spacing:.3px">SOURCE DISTRIBUTION</strong>
+      <span style="margin-left:auto;font-size:9px;color:var(--text3)">${distEntries.length} sources</span>
+    </div>
+    ${distRows}
+  </div>`;
+
+  el.innerHTML=`
+  ${kpiStrip}
+  <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:stretch">
+    <!-- Feed Health Monitor -->
+    <div style="flex:1 1 380px;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:12px 14px">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+        <span style="width:9px;height:9px;border-radius:50%;background:${st.color};box-shadow:0 0 6px ${st.color}"></span>
+        <strong style="font-size:12px;letter-spacing:.3px">FEED HEALTH</strong>
+        <span style="margin-left:auto;font-size:10px;font-weight:700;color:${st.color}">${st.label}</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:10px">
+        ${metric("Attempted",attempted)}
+        ${metric("Succeeded",succeeded,"#00C853")}
+        ${metric("Failed",failed.length,failed.length?"#D32F2F":"var(--text1)")}
+        ${metric("Articles",total)}
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:6px">${chips}</div>
+    </div>
+    <!-- Freshness Governance -->
+    <div style="flex:1 1 280px;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:12px 14px">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+        <span style="width:9px;height:9px;border-radius:50%;background:${fresh.color};box-shadow:0 0 6px ${fresh.color}"></span>
+        <strong style="font-size:12px;letter-spacing:.3px">DATA FRESHNESS</strong>
+        <span style="margin-left:auto;font-size:10px;font-weight:700;color:${fresh.color}">${fresh.label}</span>
+      </div>
+      <div style="font-size:11px;color:var(--text2);line-height:1.8">
+        <div style="display:flex;justify-content:space-between"><span style="color:var(--text3)">Last refresh</span><span>${fmtDT(DATA_STATUS.generatedAt)}</span></div>
+        <div style="display:flex;justify-content:space-between"><span style="color:var(--text3)">Refreshed</span><span style="color:${fresh.color}">${agoText(DATA_STATUS.generatedAt)}</span></div>
+        <div style="display:flex;justify-content:space-between"><span style="color:var(--text3)">Newest article</span><span>${agoText(DATA_STATUS.newestArticle)}</span></div>
+        <div style="display:flex;justify-content:space-between"><span style="color:var(--text3)">Article count</span><span>${total}</span></div>
+      </div>
+      <div style="font-size:9px;color:var(--text3);margin-top:10px;padding-top:8px;border-top:1px solid var(--line)">Automated intelligence · machine-scored · verify before acting on material decisions.</div>
+    </div>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:stretch;margin-top:12px">
+    ${diagnostics}
+    ${distribution}
+  </div>`;
 }
 
 // ─── PIS CALCULATOR ─────────────────────────────────────────────────────────
@@ -1075,7 +1253,7 @@ function buildFeedStatusBar(){
   });
   el.innerHTML=`${feedItems.join("")}
     <button onclick="simulateRefresh('all')" style="background:rgba(14,165,190,.08);border:1px solid rgba(14,165,190,.22);color:var(--teal);border-radius:5px;padding:4px 12px;font-size:10px;font-weight:600;cursor:pointer;flex-shrink:0">↻ Refresh All</button>
-    <div style="font-size:9px;color:var(--text3);margin-left:auto;text-align:right;flex-shrink:0">RSS-ready architecture<br>Phase 2: live feed integration</div>`;
+    <div style="font-size:9px;color:var(--text3);margin-left:auto;text-align:right;flex-shrink:0">Live RSS ingestion<br>Auto-refreshed daily</div>`;
 }
 
 // ─── EXEC FILTERS ────────────────────────────────────────────────────────────

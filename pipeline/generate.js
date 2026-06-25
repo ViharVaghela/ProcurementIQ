@@ -16,7 +16,7 @@ const path = require('path');
 const { parseFeed, parseDate } = require('./parse');
 const { sanitizeHeadline, sanitizeSummary, sanitizeUrl } = require('./sanitize');
 const { deterministicId, canonicalizeUrl, normalizeTitle } = require('./ids');
-const { enrich } = require('./enrich');
+const { enrich, relevanceGate } = require('./enrich');
 
 const SCHEMA_VERSION = '2.1';
 
@@ -35,11 +35,25 @@ async function fetchFeed(url, timeoutMs = 15000) {
       signal: ctrl.signal,
       headers: { 'User-Agent': 'ProcurementIQ-Pipeline/2.1 (+github-actions)' }
     });
-    if (!res.ok) throw new Error('HTTP ' + res.status);
+    if (!res.ok) { const e = new Error('HTTP ' + res.status); e.kind = 'http'; e.detail = 'HTTP ' + res.status; throw e; }
     return await res.text();
+  } catch (err) {
+    if (err.name === 'AbortError') { const e = new Error('Timeout after ' + timeoutMs + 'ms'); e.kind = 'timeout'; e.detail = 'Timeout (' + (timeoutMs / 1000) + 's)'; throw e; }
+    if (!err.kind) { err.kind = 'network'; err.detail = 'Network error: ' + err.message; }
+    throw err;
   } finally {
     clearTimeout(t);
   }
+}
+
+// Map an error from the feed loop into a concise human reason for the manifest.
+function failureReason(err) {
+  if (!err) return 'Reason Not Available';
+  if (err.kind === 'http') return err.detail;          // e.g. "HTTP 404"
+  if (err.kind === 'timeout') return err.detail;       // e.g. "Timeout (15s)"
+  if (err.kind === 'parse') return 'Parse error';
+  if (err.kind === 'network') return err.detail || 'Network error';
+  return err.message || 'Reason Not Available';
 }
 
 function withinWindow(iso, days) {
@@ -112,11 +126,27 @@ async function main() {
   const feedsFailed = [];
   let feedsSucceeded = 0;
   let collected = [];
+  const rejected = {};
+
+  // Read prior manifest to carry forward each feed's last-successful timestamp.
+  const priorManifest = readJSONSafe(path.join(OUT_DIR, 'manifest.json')) || {};
+  const priorHealth = {};
+  (priorManifest.feedHealth || []).forEach(h => { priorHealth[h.name] = h; });
+
+  const runAt = new Date().toISOString();
+  const feedHealth = [];
 
   for (const feed of feeds) {
+    const prior = priorHealth[feed.name] || {};
     try {
       const xml = await fetchFeed(feed.url);
-      const rawItems = parseFeed(xml); // throws on unparseable -> caught below
+      let rawItems;
+      try {
+        rawItems = parseFeed(xml); // throws on unparseable
+      } catch (pe) {
+        pe.kind = 'parse';
+        throw pe;
+      }
       let kept = 0;
       for (const it of rawItems) {
         if (kept >= maxPerFeed) break;
@@ -137,14 +167,18 @@ async function main() {
         };
         article.id = deterministicId(article);
         enrich(article, feed);
-        if (article.amnsScore < amnsThreshold) continue; // quality gate
+        const gate = relevanceGate(article, { amnsFloor: cfg.relevanceFloor != null ? cfg.relevanceFloor : 55 });
+        if (!gate.keep) { rejected[gate.reason] = (rejected[gate.reason] || 0) + 1; continue; }
         collected.push(article);
         kept++;
       }
       feedsSucceeded++;
+      feedHealth.push({ name: feed.name, status: 'live', lastSuccess: runAt, reason: null, itemsKept: kept });
     } catch (err) {
       feedsFailed.push(feed.name);
-      console.error('[feed-fail] ' + feed.name + ': ' + err.message);
+      const reason = failureReason(err);
+      console.error('[feed-fail] ' + feed.name + ': ' + reason);
+      feedHealth.push({ name: feed.name, status: 'failed', lastSuccess: prior.lastSuccess || null, reason, itemsKept: 0 });
     }
   }
 
@@ -162,7 +196,10 @@ async function main() {
       articleCount: prior && Array.isArray(prior.articles) ? prior.articles.length : 0,
       feedsAttempted: feeds.length,
       feedsSucceeded: 0,
-      feedsFailed
+      feedsFailed,
+      feedHealth,
+      sourceDistribution: priorManifest.sourceDistribution || {},
+      rejected: { total: 0, byReason: {} }
     };
     fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
     console.error('[ALL FEEDS FAILED] intelligence.json preserved; manifest.status=failed');
@@ -181,6 +218,14 @@ async function main() {
   const dates = articles.map(a => a.publishedAt).filter(Boolean).sort();
   const status = feedsFailed.length === 0 ? 'ok' : 'degraded';
 
+  // Source distribution — article count by source, derived automatically.
+  const sourceDistribution = {};
+  articles.forEach(a => { sourceDistribution[a.source] = (sourceDistribution[a.source] || 0) + 1; });
+
+  // Articles published today (by publish date, UTC) — for the governance KPI strip.
+  const todayUTC = generatedAt.slice(0, 10);
+  const publishedToday = articles.filter(a => (a.publishedAt || '').slice(0, 10) === todayUTC).length;
+
   const intelligence = {
     schemaVersion: SCHEMA_VERSION,
     __lastGoodGeneratedAt: generatedAt,
@@ -193,11 +238,18 @@ async function main() {
     generatedAt,
     status,
     articleCount: articles.length,
+    publishedToday,
     feedsAttempted: feeds.length,
     feedsSucceeded,
     feedsFailed,
+    feedHealth,
+    sourceDistribution,
     oldestArticle: dates[0] || null,
-    newestArticle: dates[dates.length - 1] || null
+    newestArticle: dates[dates.length - 1] || null,
+    rejected: {
+      total: Object.values(rejected).reduce((a, b) => a + b, 0),
+      byReason: rejected
+    }
   };
 
   fs.mkdirSync(OUT_DIR, { recursive: true });

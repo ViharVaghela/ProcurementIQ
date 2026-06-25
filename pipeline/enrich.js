@@ -196,4 +196,58 @@ function enrich(a, feed) {
   return a;
 }
 
-module.exports = { enrich, calcAMNS, amnsBand, deriveTags, categorize };
+// ── PROCUREMENT RELEVANCE GATE (Phase 2.1 governance / data quality) ─────────
+// Excludes low-value content even if AMNS clears a low floor. An article must:
+//   (1) clear a raised AMNS floor, AND
+//   (2) carry at least one genuine procurement/commodity/supply signal, AND
+//   (3) not be dominated by an off-topic exclusion theme (careers, consumer, etc.)
+// Returns {keep:boolean, reason:string}.
+const CORE_SIGNAL = [
+  // steel & raw materials
+  'steel','iron ore','pellet','coal','coke','coking','scrap','ferro','alloy','hrc','crc','billet','slab',
+  // commodities & pricing
+  'price','prices','priced','tariff','duty','commodity','tonne','tonnage','$/mt','futures','benchmark',
+  // logistics & freight
+  'freight','shipping','container','port','vessel','capesize','logistics','supply chain','rail',
+  // energy
+  'energy','power','electricity','natural gas','coke rate','emission','carbon','cbam',
+  // supply risk & suppliers
+  'supplier','sourcing','procurement','shortage','disruption','outage','sanction','insolven','capacity','force majeure',
+  // trade & procurement tech
+  'trade','export','import','wto','quota','automation','digital procurement','genai','sourcing platform'
+];
+const EXCLUSION_THEMES = [
+  // generic careers / HR fluff
+  'appoints','appointment','named ceo','joins as','promoted to','obituary','retire','retirement','wins award','award winner','hiring','job cuts layoff lifestyle',
+  // consumer / lifestyle / non-procurement corporate noise
+  'celebrity','gossip','sports','football','recipe','fashion','holiday gift','smartphone review','gaming','box office','movie','tourism',
+  // generic mining career / community stories (not market/supply)
+  'scholarship','community event','charity','golf','gala','wellness'
+];
+
+function relevanceGate(a, opts) {
+  const amnsFloor = (opts && typeof opts.amnsFloor === 'number') ? opts.amnsFloor : 55;
+  const text = ((a.headline || '') + ' ' + (a.summary || '')).toLowerCase();
+
+  // (3) hard exclusion: clearly off-topic theme present AND no strong steel signal
+  const hasExclusion = EXCLUSION_THEMES.some(k => text.includes(k));
+  const strongSteel = a.steelStream || (a.tags || []).some(t => ['Steel','Iron Ore','Coal','Coke','Scrap','Ferro Alloys'].includes(t));
+  if (hasExclusion && !strongSteel) return { keep: false, reason: 'exclusion-theme' };
+
+  // (2) must carry at least one core procurement signal
+  const signalHits = CORE_SIGNAL.reduce((n, k) => n + (text.includes(k) ? 1 : 0), 0);
+  if (signalHits === 0) return { keep: false, reason: 'no-procurement-signal' };
+
+  // (1) raised AMNS floor. Sources/articles that have clearly established domain
+  //     relevance get a lower floor: steel-stream feeds, OR articles with dense
+  //     procurement signal (freight/logistics/trade/energy/supply-risk clusters
+  //     that AMNS under-weights but are in-scope for AMNS procurement).
+  const denseSignal = signalHits >= 2;
+  const earnsAllowance = a.steelStream || strongSteel || denseSignal;
+  const effFloor = earnsAllowance ? Math.max(40, amnsFloor - 15) : amnsFloor;
+  if (a.amnsScore < effFloor) return { keep: false, reason: 'below-amns-floor' };
+
+  return { keep: true, reason: 'ok' };
+}
+
+module.exports = { enrich, calcAMNS, amnsBand, deriveTags, categorize, relevanceGate };
