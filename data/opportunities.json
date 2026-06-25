@@ -1,0 +1,82 @@
+[
+  {
+    "icon": "📉",
+    "title": "Scrap Price Dip — Inventory Build",
+    "cat": "Commodity Price Drop",
+    "value": "₹8-12 Cr potential",
+    "benefit": "Indian containerised scrap softening on weak EAF demand and stronger rupee — favourable scrap-vs-pellet spread.",
+    "action": "Opportunistically build scrap inventory and renegotiate supply at the dip.",
+    "urgency": "HIGH",
+    "uc": "#E53935"
+  },
+  {
+    "icon": "🇮🇳",
+    "title": "India PLI Supplier Pipeline",
+    "cat": "India Sourcing",
+    "value": "China+1 de-risking",
+    "benefit": "Rs 2.1L Cr PLI-backed capital investment creates qualified Indian suppliers with competitive pricing and lower geopolitical risk.",
+    "action": "Identify and qualify India PLI suppliers for capex and MRO categories.",
+    "urgency": "MEDIUM",
+    "uc": "#F57C00"
+  },
+  {
+    "icon": "🔨",
+    "title": "Reverse Auctions — Commoditised Spend",
+    "cat": "Reverse Auction",
+    "value": "~11% avg savings",
+    "benefit": "CIPS benchmark: 11% savings in commoditised categories with 5+ qualified bidders.",
+    "action": "Identify top 5 reverse-auction candidate categories (MRO, consumables, logistics lanes).",
+    "urgency": "MEDIUM",
+    "uc": "#F57C00"
+  },
+  {
+    "icon": "📦",
+    "title": "Category Management Maturity",
+    "cat": "Category Management",
+    "value": "+2.4% savings uplift",
+    "benefit": "Mature category programmes deliver 4.2% vs 1.8% savings — highest-ROI procurement improvement.",
+    "action": "Assess maturity and stand up category strategies for top 10 spend categories.",
+    "urgency": "LOW",
+    "uc": "#00897B"
+  },
+  {
+    "icon": "♻️",
+    "title": "Circular Sourcing Pilots",
+    "cat": "Sustainability",
+    "value": "~12% cost reduction",
+    "benefit": "Circular procurement pilots achieve 12% reduction plus ESG/CBAM benefit — dual value.",
+    "action": "Pilot circular sourcing in packaging and consumables; map recycled content.",
+    "urgency": "LOW",
+    "uc": "#00897B"
+  },
+  {
+    "icon": "🤖",
+    "title": "GenAI in Spend Classification",
+    "cat": "Digital Procurement",
+    "value": "40% cycle-time cut",
+    "benefit": "GenAI early adopters report 40% RFQ-to-award reduction via autonomous classification and supplier matching.",
+    "action": "Launch a GenAI PoC in spend classification; benchmark current cycle times.",
+    "urgency": "MEDIUM",
+    "uc": "#F57C00"
+  },
+  {
+    "icon": "⚡",
+    "title": "Renewable / Captive Power PPA",
+    "cat": "Government Incentive",
+    "value": "Stabilise conversion cost",
+    "benefit": "Power is a top-3 conversion cost; PPAs and captive renewables hedge tariff inflation and cut CBAM-relevant emissions.",
+    "action": "Evaluate renewable PPA and captive options for energy-intensive processes.",
+    "urgency": "MEDIUM",
+    "uc": "#F57C00"
+  },
+  {
+    "icon": "🛡️",
+    "title": "Aluminium Forward Contract Window",
+    "cat": "Commodity Price Drop",
+    "value": "6-12 mo lock-in",
+    "benefit": "Aluminium -8% on easing energy costs and Gulf oversupply; 3-6 month window before EV/construction recovery.",
+    "action": "Lock 6-12 month aluminium forward agreements for exposed categories.",
+    "urgency": "HIGH",
+    "uc": "#E53935"
+  }
+]

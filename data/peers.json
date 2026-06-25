@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Tata Steel",
+    "region": "India",
+    "flag": "🇮🇳",
+    "movement": "Capacity expansion at Kalinganagar Phase II ramping toward 8 MTPA.",
+    "rawmat": "Captive iron ore and coal hedge input volatility; long met-coal contracts.",
+    "supply": "Vendor base localisation push; supplier development for MRO and refractories.",
+    "tech": "Investing in pellet plant and CCUS pilots; digital procurement on Ariba.",
+    "implication": "Aggressive domestic capacity intensifies competition for ore, coal and alloys — expect tighter input availability in eastern India."
+  },
+  {
+    "name": "JSW Steel",
+    "region": "India",
+    "flag": "🇮🇳",
+    "movement": "Vijayanagar expansion to 24 MTPA; bidding for raw material assets.",
+    "rawmat": "Heavy seaborne ore/coal buyer; pursuing overseas coking coal mines.",
+    "supply": "Scaling scrap-based EAF capacity; aggressive logistics contracting.",
+    "tech": "Green steel roadmap; hydrogen pilots; advanced spend analytics.",
+    "implication": "JSW's seaborne buying scale moves freight and met-coal markets — monitor their cargo timing for freight rate signals."
+  },
+  {
+    "name": "SAIL",
+    "region": "India",
+    "flag": "🇮🇳",
+    "movement": "Brownfield modernisation across integrated plants; ~35 MTPA target.",
+    "rawmat": "Captive ore advantage; coal import dependence remains a cost exposure.",
+    "supply": "Large PSU tender pipeline; e-procurement and reverse auction expansion.",
+    "tech": "Energy efficiency and emission reduction capex; legacy asset upgrades.",
+    "implication": "SAIL tender activity sets benchmark pricing for capital and MRO categories in India."
+  },
+  {
+    "name": "Jindal Steel & Power",
+    "region": "India",
+    "flag": "🇮🇳",
+    "movement": "Angul expansion; world's largest blast furnace plans; rail capacity.",
+    "rawmat": "Coal gasification DRI route reduces coking coal dependence.",
+    "supply": "Vertical integration in mining and power; selective import sourcing.",
+    "tech": "Coal-gasification and hydrogen-blend trials; plate mill upgrades.",
+    "implication": "Their gasification route is a strategic hedge against coking coal — a model worth tracking for input diversification."
+  },
+  {
+    "name": "ArcelorMittal",
+    "region": "Global",
+    "flag": "🌍",
+    "movement": "Global decarbonisation capex; DRI-EAF transitions in EU and North America.",
+    "rawmat": "Captive mines in Canada/Liberia; high-grade ore prioritisation.",
+    "supply": "Global supplier consolidation; strong commodity hedging desk.",
+    "tech": "Hydrogen DRI at scale; XCarb green steel brand; digital S2P.",
+    "implication": "Parent-group decarbonisation playbook signals the high-grade ore + green power direction AMNS input sourcing will follow."
+  },
+  {
+    "name": "POSCO",
+    "region": "South Korea",
+    "flag": "🇰🇷",
+    "movement": "HyREX hydrogen-reduction pilots; lithium/battery materials diversification.",
+    "rawmat": "Long-term ore/coal contracts; investing in upstream lithium and nickel.",
+    "supply": "Diversifying beyond steel into battery materials supply chains.",
+    "tech": "Industry-leading hydrogen reduction R&D; smart factory procurement.",
+    "implication": "POSCO's HyREX progress is the benchmark for hydrogen steelmaking input requirements over the next decade."
+  },
+  {
+    "name": "Nucor",
+    "region": "USA",
+    "flag": "🇺🇸",
+    "movement": "EAF capacity additions; downstream product diversification.",
+    "rawmat": "Scrap- and DRI-based; owns DRI plants and scrap processing.",
+    "supply": "Vertically integrated scrap supply; agile mini-mill model.",
+    "tech": "Low-carbon EAF leadership; flexible, scrap-flexible operations.",
+    "implication": "Nucor's scrap-DRI model demonstrates the charge-mix flexibility that hedges raw material cost — relevant to EAF strategy."
+  }
+]

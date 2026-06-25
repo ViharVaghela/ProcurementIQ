@@ -1,0 +1,48 @@
+{
+  "comment": "Phase 2.1 Milestone 1 feed registry. Start small (4-5 reliable feeds). Each feed declares a tier (drives AMNS prior + dedup priority), a static sourceConf, and category hints for the categorizer.",
+  "maxItemsPerFeed": 12,
+  "recencyWindowDays": 30,
+  "amnsThreshold": 40,
+  "feeds": [
+    {
+      "name": "worldsteel",
+      "url": "https://worldsteel.org/feed/",
+      "tier": 1,
+      "sourceConf": 91,
+      "steelStream": true,
+      "categoryHints": ["Market Intelligence", "Commodity Intelligence"]
+    },
+    {
+      "name": "Mining.com",
+      "url": "https://www.mining.com/feed/",
+      "tier": 1,
+      "sourceConf": 87,
+      "steelStream": true,
+      "categoryHints": ["Commodity Intelligence", "Market Intelligence"]
+    },
+    {
+      "name": "SteelOrbis",
+      "url": "https://www.steelorbis.com/steel-news/rss/",
+      "tier": 1,
+      "sourceConf": 88,
+      "steelStream": true,
+      "categoryHints": ["Commodity Intelligence", "Market Intelligence"]
+    },
+    {
+      "name": "Supply Chain Dive",
+      "url": "https://www.supplychaindive.com/feeds/news/",
+      "tier": 2,
+      "sourceConf": 85,
+      "steelStream": false,
+      "categoryHints": ["Risk Intelligence", "Supplier Intelligence"]
+    },
+    {
+      "name": "Reuters Business",
+      "url": "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
+      "tier": 3,
+      "sourceConf": 90,
+      "steelStream": false,
+      "categoryHints": ["Market Intelligence", "Risk Intelligence"]
+    }
+  ]
+}

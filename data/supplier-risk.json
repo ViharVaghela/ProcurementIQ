@@ -1,0 +1,92 @@
+[
+  {
+    "icon": "💰",
+    "cat": "Financial Risk",
+    "level": 4,
+    "lbl": "HIGH",
+    "lc": "#E53935",
+    "trend": "up",
+    "impact": "340 APAC Tier-1/2 suppliers at elevated insolvency risk (Moody's). Disruption to critical single-source inputs.",
+    "mitigation": [
+      "Run financial health screening on all critical vendors",
+      "Prioritise single-source suppliers for review",
+      "Establish contingency supply arrangements",
+      "Increase monitoring frequency for at-risk vendors"
+    ]
+  },
+  {
+    "icon": "🚚",
+    "cat": "Delivery Risk",
+    "level": 5,
+    "lbl": "CRITICAL",
+    "lc": "#B71C1C",
+    "trend": "up",
+    "impact": "Red Sea diversions add 10-14 days; capesize tightness raises ore/coal landed lead times. OTIF exposure on seaborne inputs.",
+    "mitigation": [
+      "Increase safety stock for seaborne raw materials",
+      "Secure COA freight cover",
+      "Pre-book critical shipments",
+      "Dual-route Asia-origin cargoes"
+    ]
+  },
+  {
+    "icon": "✅",
+    "cat": "Quality Risk",
+    "level": 2,
+    "lbl": "LOW",
+    "lc": "#00897B",
+    "trend": "flat",
+    "impact": "Grade-critical alloy and refractory quality variation can affect heat chemistry and yield.",
+    "mitigation": [
+      "Tighten incoming quality inspection on alloys",
+      "Maintain approved-source register",
+      "Quarterly supplier scorecards on quality",
+      "Qualify backup grade-critical suppliers"
+    ]
+  },
+  {
+    "icon": "🌱",
+    "cat": "ESG Risk",
+    "level": 4,
+    "lbl": "HIGH",
+    "lc": "#E53935",
+    "trend": "up",
+    "impact": "CBAM enforcement Oct 2026 + CSRD Scope 3; 28% rise in supplier carbon disclosure failures. Market-access and compliance exposure.",
+    "mitigation": [
+      "Begin supplier embedded-carbon data collection",
+      "Contractualise disclosure requirements",
+      "Prioritise high-grade ore to cut emissions",
+      "Secure green power for CBAM-exposed exports"
+    ]
+  },
+  {
+    "icon": "🌍",
+    "cat": "Geopolitical Risk",
+    "level": 4,
+    "lbl": "HIGH",
+    "lc": "#E53935",
+    "trend": "up",
+    "impact": "US-China tariff escalation (60% prob Q3); concentration in single origins for ore, coal and alloys.",
+    "mitigation": [
+      "Diversify coking coal origin beyond Australia",
+      "Build China+1 / India sourcing pipeline",
+      "Model tariff impact on imported inputs",
+      "Review force majeure and tariff clauses"
+    ]
+  },
+  {
+    "icon": "🏭",
+    "cat": "Capacity Risk",
+    "level": 3,
+    "lbl": "MEDIUM",
+    "lc": "#F57C00",
+    "trend": "up",
+    "impact": "Peer mills ramping output (Tata, JSW, SAIL) intensify competition for ore, coal, alloys and freight tonnage.",
+    "mitigation": [
+      "Secure raw material ahead of demand ramp",
+      "Lock long-term input supply agreements",
+      "Reserve freight capacity early",
+      "Monitor peer cargo timing for signals"
+    ]
+  }
+]
