@@ -1,0 +1,51 @@
+name: ProcurementIQ Intelligence Refresh
+
+# Phase 2.1 — Milestone 1
+# Daily scheduled ingestion: fetch RSS -> sanitize -> score -> intelligence.json
+# Commits only when data changes. All-fail safety: last-good is preserved.
+
+on:
+  schedule:
+    # 05:00 UTC daily (~10:30 IST, before the workday). Cron is UTC.
+    - cron: '0 5 * * *'
+  workflow_dispatch: {}   # allow manual runs from the Actions tab
+
+permissions:
+  contents: write          # required to commit the regenerated JSON
+
+concurrency:
+  group: intelligence-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # No dependencies to install — the pipeline is pure Node (zero npm deps).
+
+      - name: Generate intelligence
+        id: generate
+        run: node pipeline/generate.js --out data
+        # The script never exits non-zero on feed failures; it only fails on a
+        # true fatal (e.g. unreadable config). All-feed-failure is handled
+        # internally: last-good intelligence.json is preserved, manifest=failed.
+
+      - name: Commit changes (only if data changed)
+        run: |
+          git config user.name  "procurementiq-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/intelligence.json data/manifest.json
+          if git diff --staged --quiet; then
+            echo "No intelligence changes — skipping commit."
+          else
+            git commit -m "chore(intel): scheduled refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
