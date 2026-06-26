@@ -1,106 +1,64 @@
 {
   "schemaVersion": "2.1",
-  "generatedAt": "2026-06-24T23:31:47.404Z",
-  "status": "ok",
-  "source": "seed (curated baseline — pipeline replaces on first scheduled run)",
-  "articleCount": 28,
+  "generatedAt": "2026-06-26T08:28:34.227Z",
+  "status": "degraded",
+  "articleCount": 11,
+  "publishedToday": 0,
   "feedsAttempted": 5,
-  "feedsSucceeded": 5,
-  "feedsFailed": [],
-  "oldestArticle": "2026-06-14T00:00:00.000Z",
-  "newestArticle": "2026-06-20T00:00:00.000Z",
-  "idMigrationMap": {
-    "1": "a_2820492d7422",
-    "2": "a_428f345f55e8",
-    "3": "a_cc4bbce2ca6a",
-    "4": "a_835e55bfdb90",
-    "5": "a_d627a18ac223",
-    "6": "a_00b4a28324c7",
-    "7": "a_ef106bc844ed",
-    "8": "a_317a2060dece",
-    "9": "a_ac1f4f2fef73",
-    "10": "a_4f53de99033a",
-    "11": "a_0235740fe048",
-    "12": "a_01e14193d0ef",
-    "13": "a_72c58dd5858f",
-    "14": "a_8553f4533196",
-    "15": "a_6c4c8a3e56ec",
-    "16": "a_fb03821bf434",
-    "17": "a_1eaed8e44532",
-    "18": "a_0cf6c1d853c5",
-    "19": "a_2e8a142a683b",
-    "20": "a_648e1b000902",
-    "21": "a_16eba44be118",
-    "22": "a_2b7e90c26e92",
-    "23": "a_0105a0e5af5f",
-    "24": "a_31920c32ab0d",
-    "25": "a_46c6607184da",
-    "26": "a_bf5f34211513",
-    "27": "a_813d5a8dd5d5",
-    "28": "a_b2d0afee2753"
-  },
+  "feedsSucceeded": 2,
+  "feedsFailed": [
+    "Mining.com",
+    "SteelOrbis",
+    "Reuters Business"
+  ],
   "feedHealth": [
     {
       "name": "worldsteel",
       "status": "live",
-      "lastSuccess": "2026-06-25T15:53:58.727Z",
+      "lastSuccess": "2026-06-26T08:28:32.621Z",
       "reason": null,
-      "itemsKept": 1
+      "itemsKept": 7
     },
     {
       "name": "Mining.com",
-      "status": "live",
+      "status": "failed",
       "lastSuccess": "2026-06-25T15:53:58.727Z",
-      "reason": null,
+      "reason": "HTTP 403",
       "itemsKept": 0
     },
     {
       "name": "SteelOrbis",
-      "status": "live",
+      "status": "failed",
       "lastSuccess": "2026-06-25T15:53:58.727Z",
-      "reason": null,
-      "itemsKept": 1
+      "reason": "HTTP 404",
+      "itemsKept": 0
     },
     {
       "name": "Supply Chain Dive",
       "status": "live",
-      "lastSuccess": "2026-06-25T15:53:58.727Z",
+      "lastSuccess": "2026-06-26T08:28:32.621Z",
       "reason": null,
-      "itemsKept": 2
+      "itemsKept": 4
     },
     {
       "name": "Reuters Business",
-      "status": "live",
+      "status": "failed",
       "lastSuccess": "2026-06-25T15:53:58.727Z",
-      "reason": null,
-      "itemsKept": 3
+      "reason": "HTTP 404",
+      "itemsKept": 0
     }
   ],
   "sourceDistribution": {
-    "Supply Chain Dive": 2,
-    "Reuters Business": 3,
-    "Global Trade Magazine": 2,
-    "Industry Week": 1,
-    "Spend Matters": 3,
-    "Procurement Leaders": 2,
-    "GreenBiz": 1,
-    "Logistics Management": 1,
-    "Bloomberg Green": 1,
-    "Gartner": 1,
-    "Energy Intelligence": 2,
-    "CIPS": 1,
-    "CDP": 1,
-    "World Bank": 1,
-    "S&P Global Platts": 1,
-    "SteelOrbis": 1,
-    "Fastmarkets": 1,
-    "Metal Bulletin": 1,
-    "worldsteel": 1,
-    "Drewry": 1
+    "worldsteel": 7,
+    "Supply Chain Dive": 4
   },
-  "publishedToday": 0,
+  "oldestArticle": "2026-06-04T08:14:28.000Z",
+  "newestArticle": "2026-06-25T15:55:00.000Z",
   "rejected": {
-    "total": 0,
-    "byReason": {}
+    "total": 6,
+    "byReason": {
+      "no-procurement-signal": 3,
+      "below-amns-floor": 3
+    }
   }
 }
