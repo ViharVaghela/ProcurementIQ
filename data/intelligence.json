@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-06-28T08:19:18.039Z",
+  "__lastGoodGeneratedAt": "2026-06-29T09:24:40.021Z",
   "articles": [
     {
       "headline": "POSCO Partners with Hyundai Motor and 8 Organizations to Develop Next-Generation High-Efficiency Electrical Steel for EVs",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-15T09:02:44.000Z",
-      "ingestedAt": "2026-06-28T08:19:17.370Z",
+      "ingestedAt": "2026-06-29T09:24:39.042Z",
       "id": "a_41fbe06bda1c",
       "steelStream": true,
       "tags": [
@@ -38,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-04T08:14:28.000Z",
-      "ingestedAt": "2026-06-28T08:19:17.371Z",
+      "ingestedAt": "2026-06-29T09:24:39.043Z",
       "id": "a_2fd7e4cc6f5a",
       "steelStream": true,
       "tags": [
@@ -66,7 +66,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-23T08:36:17.000Z",
-      "ingestedAt": "2026-06-28T08:19:17.369Z",
+      "ingestedAt": "2026-06-29T09:24:39.042Z",
       "id": "a_eb255a9c762d",
       "steelStream": true,
       "tags": [
@@ -94,7 +94,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-25T08:47:24.000Z",
-      "ingestedAt": "2026-06-28T08:19:17.366Z",
+      "ingestedAt": "2026-06-29T09:24:39.040Z",
       "id": "a_165af0c4bbc0",
       "steelStream": true,
       "tags": [
@@ -122,7 +122,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-18T14:28:23.000Z",
-      "ingestedAt": "2026-06-28T08:19:17.370Z",
+      "ingestedAt": "2026-06-29T09:24:39.042Z",
       "id": "a_72246bff7456",
       "steelStream": true,
       "tags": [
@@ -150,7 +150,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-08T08:18:55.000Z",
-      "ingestedAt": "2026-06-28T08:19:17.371Z",
+      "ingestedAt": "2026-06-29T09:24:39.043Z",
       "id": "a_8064438556bf",
       "steelStream": true,
       "tags": [
@@ -177,7 +177,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-04T09:21:08.000Z",
-      "ingestedAt": "2026-06-28T08:19:17.371Z",
+      "ingestedAt": "2026-06-29T09:24:39.043Z",
       "id": "a_e766d285f908",
       "steelStream": true,
       "tags": [
@@ -204,7 +204,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-06-25T15:16:09.000Z",
-      "ingestedAt": "2026-06-28T08:19:17.607Z",
+      "ingestedAt": "2026-06-29T09:24:39.629Z",
       "id": "a_abd9b5a698e7",
       "steelStream": false,
       "tags": [
@@ -231,7 +231,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-06-25T15:55:00.000Z",
-      "ingestedAt": "2026-06-28T08:19:17.607Z",
+      "ingestedAt": "2026-06-29T09:24:39.629Z",
       "id": "a_39c6c8840043",
       "steelStream": false,
       "tags": [],
@@ -256,7 +256,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-06-24T19:17:00.000Z",
-      "ingestedAt": "2026-06-28T08:19:17.608Z",
+      "ingestedAt": "2026-06-29T09:24:39.630Z",
       "id": "a_2757f9ac975d",
       "steelStream": false,
       "tags": [
@@ -270,31 +270,6 @@
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 2,
-      "amnsScore": 50,
-      "amnsBand": "Low",
-      "breaking": false,
-      "trending": false
-    },
-    {
-      "headline": "Kroger is working with suppliers to optimize costs",
-      "summary": "The grocery retailer is pushing negotiations and intentionally leveraging direct sourcing to optimize the cost of goods.",
-      "url": "https://www.supplychaindive.com/news/kroger-is-working-with-suppliers-to-optimize-costs/823545/",
-      "source": "Supply Chain Dive",
-      "sourceConf": 85,
-      "feedTier": 2,
-      "publishedAt": "2026-06-24T14:28:56.000Z",
-      "ingestedAt": "2026-06-28T08:19:17.608Z",
-      "id": "a_e080f68f24d6",
-      "steelStream": false,
-      "tags": [],
-      "category": "Supplier Intelligence",
-      "urgency": "INFO",
-      "costImpact": 2,
-      "supplyRisk": 1,
-      "urgencyScore": 2,
-      "strategic": 1,
-      "riskScore": 1,
-      "oppScore": 1,
       "amnsScore": 50,
       "amnsBand": "Low",
       "breaking": false,
