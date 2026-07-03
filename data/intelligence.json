@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-07-02T08:10:28.756Z",
+  "__lastGoodGeneratedAt": "2026-07-03T08:07:21.549Z",
   "articles": [
     {
       "headline": "POSCO Partners with Hyundai Motor and 8 Organizations to Develop Next-Generation High-Efficiency Electrical Steel for EVs",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-15T09:02:44.000Z",
-      "ingestedAt": "2026-07-02T08:10:27.998Z",
+      "ingestedAt": "2026-07-03T08:07:20.592Z",
       "id": "a_41fbe06bda1c",
       "steelStream": true,
       "tags": [
@@ -38,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-04T08:14:28.000Z",
-      "ingestedAt": "2026-07-02T08:10:27.999Z",
+      "ingestedAt": "2026-07-03T08:07:20.593Z",
       "id": "a_2fd7e4cc6f5a",
       "steelStream": true,
       "tags": [
@@ -66,7 +66,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-23T08:36:17.000Z",
-      "ingestedAt": "2026-07-02T08:10:27.997Z",
+      "ingestedAt": "2026-07-03T08:07:20.591Z",
       "id": "a_eb255a9c762d",
       "steelStream": true,
       "tags": [
@@ -94,7 +94,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-25T08:47:24.000Z",
-      "ingestedAt": "2026-07-02T08:10:27.995Z",
+      "ingestedAt": "2026-07-03T08:07:20.589Z",
       "id": "a_165af0c4bbc0",
       "steelStream": true,
       "tags": [
@@ -122,7 +122,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-18T14:28:23.000Z",
-      "ingestedAt": "2026-07-02T08:10:27.998Z",
+      "ingestedAt": "2026-07-03T08:07:20.592Z",
       "id": "a_72246bff7456",
       "steelStream": true,
       "tags": [
@@ -150,7 +150,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-08T08:18:55.000Z",
-      "ingestedAt": "2026-07-02T08:10:27.998Z",
+      "ingestedAt": "2026-07-03T08:07:20.592Z",
       "id": "a_8064438556bf",
       "steelStream": true,
       "tags": [
@@ -177,7 +177,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-04T09:21:08.000Z",
-      "ingestedAt": "2026-07-02T08:10:27.999Z",
+      "ingestedAt": "2026-07-03T08:07:20.593Z",
       "id": "a_e766d285f908",
       "steelStream": true,
       "tags": [
@@ -197,23 +197,52 @@
       "trending": false
     },
     {
-      "headline": "CMA CGM to buy FedEx’s contract logistics unit for $1.4B",
-      "summary": "Once the deal for FedEx Supply Chain is complete, the two companies also plan to solidify multiyear ocean and air freight agreements.",
-      "url": "https://www.supplychaindive.com/news/cma-cgm-to-buy-fedexs-contract-logistics-unit-for-14b/824222/",
+      "headline": "Digital twins, software maturity lead manufacturing automation trends",
+      "summary": "AI-powered simulation and other types of robotics technologies&nbsp;are becoming more powerful and cost-effective, per speakers at the Automate conference.",
+      "url": "https://www.supplychaindive.com/news/digital-twins-software-maturity-lead-manufacturing-automation-trends/824288/",
       "source": "Supply Chain Dive",
       "sourceConf": 85,
       "feedTier": 2,
-      "publishedAt": "2026-07-01T15:30:00.000Z",
-      "ingestedAt": "2026-07-02T08:10:28.393Z",
-      "id": "a_45123c3f7b54",
+      "publishedAt": "2026-07-02T14:44:00.000Z",
+      "ingestedAt": "2026-07-03T08:07:21.054Z",
+      "id": "a_64c937de9512",
       "steelStream": false,
       "tags": [
-        "Freight",
-        "Logistics"
+        "Iron Ore",
+        "Energy",
+        "Digital Procurement"
+      ],
+      "category": "Technology Intelligence",
+      "urgency": "MONITOR",
+      "costImpact": 2,
+      "supplyRisk": 1,
+      "urgencyScore": 3,
+      "strategic": 2,
+      "riskScore": 1,
+      "oppScore": 1,
+      "amnsScore": 63,
+      "amnsBand": "Medium",
+      "breaking": false,
+      "trending": false
+    },
+    {
+      "headline": "McCormick gets $28M tariff refund as Iran war raises costs",
+      "summary": "The spice and ingredients maker plans to use the returned funds to help mitigate higher logistics and material costs tied to the conflict.",
+      "url": "https://www.supplychaindive.com/news/mccormick-gets-28m-tariff-refund-as-iran-war-raises-costs/824294/",
+      "source": "Supply Chain Dive",
+      "sourceConf": 85,
+      "feedTier": 2,
+      "publishedAt": "2026-07-02T17:58:00.000Z",
+      "ingestedAt": "2026-07-03T08:07:21.053Z",
+      "id": "a_b22846fec015",
+      "steelStream": false,
+      "tags": [
+        "Logistics",
+        "Trade Tariffs"
       ],
       "category": "Risk Intelligence",
       "urgency": "MONITOR",
-      "costImpact": 1,
+      "costImpact": 2,
       "supplyRisk": 1,
       "urgencyScore": 3,
       "strategic": 1,
@@ -225,24 +254,25 @@
       "trending": false
     },
     {
-      "headline": "CBP launches first of 2 tariff refund expansions",
-      "summary": "The agency&rsquo;s refund portal now covers entries awaiting reconciliation of their final duty calculations.",
-      "url": "https://www.supplychaindive.com/news/cbp-launches-first-of-2-tariff-refund-expansions/824121/",
+      "headline": "CMA CGM to buy FedEx’s contract logistics unit for $1.4B",
+      "summary": "Once the deal for FedEx Supply Chain is complete, the two companies also plan to solidify multiyear ocean and air freight agreements.",
+      "url": "https://www.supplychaindive.com/news/cma-cgm-to-buy-fedexs-contract-logistics-unit-for-14b/824222/",
       "source": "Supply Chain Dive",
       "sourceConf": 85,
       "feedTier": 2,
-      "publishedAt": "2026-06-30T15:01:00.000Z",
-      "ingestedAt": "2026-07-02T08:10:28.394Z",
-      "id": "a_cc3ef3a5437d",
+      "publishedAt": "2026-07-01T15:30:00.000Z",
+      "ingestedAt": "2026-07-03T08:07:21.055Z",
+      "id": "a_45123c3f7b54",
       "steelStream": false,
       "tags": [
-        "Trade Tariffs"
+        "Freight",
+        "Logistics"
       ],
       "category": "Risk Intelligence",
       "urgency": "MONITOR",
       "costImpact": 1,
       "supplyRisk": 1,
-      "urgencyScore": 4,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
