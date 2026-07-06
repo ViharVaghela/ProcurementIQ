@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-07-05T07:54:33.707Z",
+  "__lastGoodGeneratedAt": "2026-07-06T08:58:46.008Z",
   "articles": [
     {
       "headline": "POSCO Partners with Hyundai Motor and 8 Organizations to Develop Next-Generation High-Efficiency Electrical Steel for EVs",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-15T09:02:44.000Z",
-      "ingestedAt": "2026-07-05T07:54:32.937Z",
+      "ingestedAt": "2026-07-06T08:58:45.318Z",
       "id": "a_41fbe06bda1c",
       "steelStream": true,
       "tags": [
@@ -38,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-23T08:36:17.000Z",
-      "ingestedAt": "2026-07-05T07:54:32.936Z",
+      "ingestedAt": "2026-07-06T08:58:45.317Z",
       "id": "a_eb255a9c762d",
       "steelStream": true,
       "tags": [
@@ -66,7 +66,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-25T08:47:24.000Z",
-      "ingestedAt": "2026-07-05T07:54:32.933Z",
+      "ingestedAt": "2026-07-06T08:58:45.314Z",
       "id": "a_165af0c4bbc0",
       "steelStream": true,
       "tags": [
@@ -94,7 +94,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-18T14:28:23.000Z",
-      "ingestedAt": "2026-07-05T07:54:32.936Z",
+      "ingestedAt": "2026-07-06T08:58:45.318Z",
       "id": "a_72246bff7456",
       "steelStream": true,
       "tags": [
@@ -122,7 +122,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-08T08:18:55.000Z",
-      "ingestedAt": "2026-07-05T07:54:32.937Z",
+      "ingestedAt": "2026-07-06T08:58:45.319Z",
       "id": "a_8064438556bf",
       "steelStream": true,
       "tags": [
@@ -149,7 +149,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-02T14:44:00.000Z",
-      "ingestedAt": "2026-07-05T07:54:33.260Z",
+      "ingestedAt": "2026-07-06T08:58:45.698Z",
       "id": "a_64c937de9512",
       "steelStream": false,
       "tags": [
@@ -178,7 +178,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-02T17:58:00.000Z",
-      "ingestedAt": "2026-07-05T07:54:33.259Z",
+      "ingestedAt": "2026-07-06T08:58:45.698Z",
       "id": "a_b22846fec015",
       "steelStream": false,
       "tags": [
@@ -206,7 +206,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-01T15:30:00.000Z",
-      "ingestedAt": "2026-07-05T07:54:33.261Z",
+      "ingestedAt": "2026-07-06T08:58:45.699Z",
       "id": "a_45123c3f7b54",
       "steelStream": false,
       "tags": [
