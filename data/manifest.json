@@ -1,13 +1,12 @@
 {
   "schemaVersion": "2.1",
-  "generatedAt": "2026-07-06T08:58:46.008Z",
+  "generatedAt": "2026-07-07T08:20:53.665Z",
   "status": "degraded",
-  "articleCount": 8,
+  "articleCount": 22,
   "publishedToday": 0,
   "feedsAttempted": 5,
-  "feedsSucceeded": 2,
+  "feedsSucceeded": 3,
   "feedsFailed": [
-    "Mining.com",
     "SteelOrbis",
     "Reuters Business"
   ],
@@ -15,16 +14,16 @@
     {
       "name": "worldsteel",
       "status": "live",
-      "lastSuccess": "2026-07-06T08:58:44.339Z",
+      "lastSuccess": "2026-07-07T08:20:51.079Z",
       "reason": null,
       "itemsKept": 5
     },
     {
       "name": "Mining.com",
-      "status": "failed",
-      "lastSuccess": "2026-07-04T07:43:42.025Z",
-      "reason": "HTTP 403",
-      "itemsKept": 0
+      "status": "live",
+      "lastSuccess": "2026-07-07T08:20:51.079Z",
+      "reason": null,
+      "itemsKept": 12
     },
     {
       "name": "SteelOrbis",
@@ -36,9 +35,9 @@
     {
       "name": "Supply Chain Dive",
       "status": "live",
-      "lastSuccess": "2026-07-06T08:58:44.339Z",
+      "lastSuccess": "2026-07-07T08:20:51.079Z",
       "reason": null,
-      "itemsKept": 3
+      "itemsKept": 5
     },
     {
       "name": "Reuters Business",
@@ -49,16 +48,17 @@
     }
   ],
   "sourceDistribution": {
+    "Mining.com": 12,
     "worldsteel": 5,
-    "Supply Chain Dive": 3
+    "Supply Chain Dive": 5
   },
   "oldestArticle": "2026-06-08T08:18:55.000Z",
-  "newestArticle": "2026-07-02T17:58:00.000Z",
+  "newestArticle": "2026-07-06T17:09:21.000Z",
   "rejected": {
-    "total": 7,
+    "total": 26,
     "byReason": {
-      "below-amns-floor": 5,
-      "no-procurement-signal": 2
+      "no-procurement-signal": 22,
+      "below-amns-floor": 4
     }
   }
 }
