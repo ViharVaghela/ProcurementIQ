@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-07-11T07:10:05.858Z",
+  "__lastGoodGeneratedAt": "2026-07-12T07:26:52.245Z",
   "articles": [
     {
       "headline": "POSCO Partners with Hyundai Motor and 8 Organizations to Develop Next-Generation High-Efficiency Electrical Steel for EVs",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-15T09:02:44.000Z",
-      "ingestedAt": "2026-07-11T07:10:05.017Z",
+      "ingestedAt": "2026-07-12T07:26:51.561Z",
       "id": "a_41fbe06bda1c",
       "steelStream": true,
       "tags": [
@@ -38,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-23T08:36:17.000Z",
-      "ingestedAt": "2026-07-11T07:10:05.016Z",
+      "ingestedAt": "2026-07-12T07:26:51.559Z",
       "id": "a_eb255a9c762d",
       "steelStream": true,
       "tags": [
@@ -66,7 +66,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-25T08:47:24.000Z",
-      "ingestedAt": "2026-07-11T07:10:05.013Z",
+      "ingestedAt": "2026-07-12T07:26:51.556Z",
       "id": "a_165af0c4bbc0",
       "steelStream": true,
       "tags": [
@@ -94,7 +94,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-18T14:28:23.000Z",
-      "ingestedAt": "2026-07-11T07:10:05.016Z",
+      "ingestedAt": "2026-07-12T07:26:51.560Z",
       "id": "a_72246bff7456",
       "steelStream": true,
       "tags": [
@@ -122,7 +122,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-10T15:10:42.000Z",
-      "ingestedAt": "2026-07-11T07:10:05.424Z",
+      "ingestedAt": "2026-07-12T07:26:51.893Z",
       "id": "a_c5d021a734a7",
       "steelStream": false,
       "tags": [
@@ -134,7 +134,7 @@
       "urgency": "INFO",
       "costImpact": 1,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
@@ -151,7 +151,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-10T15:07:00.000Z",
-      "ingestedAt": "2026-07-11T07:10:05.425Z",
+      "ingestedAt": "2026-07-12T07:26:51.894Z",
       "id": "a_28f8be5c0922",
       "steelStream": false,
       "tags": [
@@ -161,7 +161,7 @@
       "urgency": "INFO",
       "costImpact": 1,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
@@ -178,7 +178,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-10T11:23:00.000Z",
-      "ingestedAt": "2026-07-11T07:10:05.425Z",
+      "ingestedAt": "2026-07-12T07:26:51.894Z",
       "id": "a_c5fb3dc9c362",
       "steelStream": false,
       "tags": [
@@ -188,7 +188,7 @@
       "urgency": "INFO",
       "costImpact": 1,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
@@ -205,7 +205,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-08T18:47:05.000Z",
-      "ingestedAt": "2026-07-11T07:10:05.427Z",
+      "ingestedAt": "2026-07-12T07:26:51.895Z",
       "id": "a_2d8b31056da5",
       "steelStream": false,
       "tags": [
