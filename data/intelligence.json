@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-07-18T06:59:02.479Z",
+  "__lastGoodGeneratedAt": "2026-07-19T07:25:02.999Z",
   "articles": [
     {
       "headline": "May 2026 crude steel production",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-23T08:36:17.000Z",
-      "ingestedAt": "2026-07-18T06:59:01.688Z",
+      "ingestedAt": "2026-07-19T07:25:02.303Z",
       "id": "a_eb255a9c762d",
       "steelStream": true,
       "tags": [
@@ -38,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-25T08:47:24.000Z",
-      "ingestedAt": "2026-07-18T06:59:01.686Z",
+      "ingestedAt": "2026-07-19T07:25:02.301Z",
       "id": "a_165af0c4bbc0",
       "steelStream": true,
       "tags": [
@@ -59,34 +59,6 @@
       "trending": false
     },
     {
-      "headline": "Tata Steel Partners with Google Cloud To Deploy a Unified Agentic AI Across its Global Value Chain",
-      "summary": "Tata Steel and Google Cloud today announced a major expansion of their strategic partnership to architect the future of steel and advance Tata Steel’s unified, enterprise-wide agentic AI strategy.",
-      "url": "https://worldsteel.org/media/industry-member-news/2026-member-news/tata-steel-partners-with-google-cloud-to-deploy-a-unified-agentic-ai-across-its-global-value-chain-2/",
-      "source": "worldsteel",
-      "sourceConf": 91,
-      "feedTier": 1,
-      "publishedAt": "2026-06-18T14:28:23.000Z",
-      "ingestedAt": "2026-07-18T06:59:01.689Z",
-      "id": "a_72246bff7456",
-      "steelStream": true,
-      "tags": [
-        "Steel",
-        "AI Procurement"
-      ],
-      "category": "Commodity Intelligence",
-      "urgency": "MONITOR",
-      "costImpact": 2,
-      "supplyRisk": 1,
-      "urgencyScore": 2,
-      "strategic": 4,
-      "riskScore": 1,
-      "oppScore": 1,
-      "amnsScore": 70,
-      "amnsBand": "Medium",
-      "breaking": false,
-      "trending": false
-    },
-    {
       "headline": "Tariffs, Iran war prompt ocean shippers to scrap tradition: Los Angeles port head",
       "summary": "The port logged over 1 million TEUs in June, but ocean shipping faces a murky second half of year, Gene Seroka said.",
       "url": "https://www.supplychaindive.com/news/tariffs-iran-war-prompt-ocean-shippers-to-scrap-tradition-los-angeles-por/825454/",
@@ -94,7 +66,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-17T14:29:00.000Z",
-      "ingestedAt": "2026-07-18T06:59:02.007Z",
+      "ingestedAt": "2026-07-19T07:25:02.675Z",
       "id": "a_19e4f471c685",
       "steelStream": false,
       "tags": [
@@ -106,7 +78,7 @@
       "urgency": "INFO",
       "costImpact": 1,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
@@ -123,7 +95,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-16T20:33:00.000Z",
-      "ingestedAt": "2026-07-18T06:59:02.007Z",
+      "ingestedAt": "2026-07-19T07:25:02.676Z",
       "id": "a_c6b6eb29d2b1",
       "steelStream": false,
       "tags": [
@@ -150,7 +122,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-16T20:33:00.000Z",
-      "ingestedAt": "2026-07-18T06:59:02.008Z",
+      "ingestedAt": "2026-07-19T07:25:02.676Z",
       "id": "a_a713039eaacb",
       "steelStream": false,
       "tags": [
@@ -177,7 +149,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-16T15:35:00.000Z",
-      "ingestedAt": "2026-07-18T06:59:02.008Z",
+      "ingestedAt": "2026-07-19T07:25:02.676Z",
       "id": "a_b09243c5fa78",
       "steelStream": false,
       "tags": [],
@@ -202,7 +174,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-16T11:52:00.000Z",
-      "ingestedAt": "2026-07-18T06:59:02.009Z",
+      "ingestedAt": "2026-07-19T07:25:02.677Z",
       "id": "a_40fd9fe36565",
       "steelStream": false,
       "tags": [
@@ -229,7 +201,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-15T13:34:00.000Z",
-      "ingestedAt": "2026-07-18T06:59:02.011Z",
+      "ingestedAt": "2026-07-19T07:25:02.678Z",
       "id": "a_b8a72ec03fc6",
       "steelStream": false,
       "tags": [
