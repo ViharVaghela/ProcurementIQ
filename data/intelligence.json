@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-07-19T07:25:02.999Z",
+  "__lastGoodGeneratedAt": "2026-07-20T07:56:09.440Z",
   "articles": [
     {
       "headline": "May 2026 crude steel production",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-23T08:36:17.000Z",
-      "ingestedAt": "2026-07-19T07:25:02.303Z",
+      "ingestedAt": "2026-07-20T07:56:09.052Z",
       "id": "a_eb255a9c762d",
       "steelStream": true,
       "tags": [
@@ -38,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-06-25T08:47:24.000Z",
-      "ingestedAt": "2026-07-19T07:25:02.301Z",
+      "ingestedAt": "2026-07-20T07:56:09.049Z",
       "id": "a_165af0c4bbc0",
       "steelStream": true,
       "tags": [
@@ -60,13 +60,13 @@
     },
     {
       "headline": "Tariffs, Iran war prompt ocean shippers to scrap tradition: Los Angeles port head",
-      "summary": "The port logged over 1 million TEUs in June, but ocean shipping faces a murky second half of year, Gene Seroka said.",
+      "summary": "The port just logged its best June in history at 1 million TEUs, but visibility beyond July is unclear as companies adapt to changing conditions in real-time, Gene Seroka said.",
       "url": "https://www.supplychaindive.com/news/tariffs-iran-war-prompt-ocean-shippers-to-scrap-tradition-los-angeles-por/825454/",
       "source": "Supply Chain Dive",
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-17T14:29:00.000Z",
-      "ingestedAt": "2026-07-19T07:25:02.675Z",
+      "ingestedAt": "2026-07-20T07:56:09.278Z",
       "id": "a_19e4f471c685",
       "steelStream": false,
       "tags": [
@@ -95,7 +95,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-16T20:33:00.000Z",
-      "ingestedAt": "2026-07-19T07:25:02.676Z",
+      "ingestedAt": "2026-07-20T07:56:09.279Z",
       "id": "a_c6b6eb29d2b1",
       "steelStream": false,
       "tags": [
@@ -122,7 +122,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-16T20:33:00.000Z",
-      "ingestedAt": "2026-07-19T07:25:02.676Z",
+      "ingestedAt": "2026-07-20T07:56:09.279Z",
       "id": "a_a713039eaacb",
       "steelStream": false,
       "tags": [
@@ -149,7 +149,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-16T15:35:00.000Z",
-      "ingestedAt": "2026-07-19T07:25:02.676Z",
+      "ingestedAt": "2026-07-20T07:56:09.279Z",
       "id": "a_b09243c5fa78",
       "steelStream": false,
       "tags": [],
@@ -174,7 +174,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-16T11:52:00.000Z",
-      "ingestedAt": "2026-07-19T07:25:02.677Z",
+      "ingestedAt": "2026-07-20T07:56:09.280Z",
       "id": "a_40fd9fe36565",
       "steelStream": false,
       "tags": [
@@ -201,7 +201,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-15T13:34:00.000Z",
-      "ingestedAt": "2026-07-19T07:25:02.678Z",
+      "ingestedAt": "2026-07-20T07:56:09.281Z",
       "id": "a_b8a72ec03fc6",
       "steelStream": false,
       "tags": [
