@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "generatedAt": "2026-07-23T07:30:30.092Z",
+  "generatedAt": "2026-07-24T07:28:35.393Z",
   "status": "degraded",
   "articleCount": 7,
   "publishedToday": 0,
@@ -15,7 +15,7 @@
     {
       "name": "worldsteel",
       "status": "live",
-      "lastSuccess": "2026-07-23T07:30:28.375Z",
+      "lastSuccess": "2026-07-24T07:28:33.577Z",
       "reason": null,
       "itemsKept": 3
     },
@@ -36,7 +36,7 @@
     {
       "name": "Supply Chain Dive",
       "status": "live",
-      "lastSuccess": "2026-07-23T07:30:28.375Z",
+      "lastSuccess": "2026-07-24T07:28:33.577Z",
       "reason": null,
       "itemsKept": 4
     },
@@ -49,17 +49,16 @@
     }
   ],
   "sourceDistribution": {
-    "worldsteel": 3,
-    "Supply Chain Dive": 4
+    "Supply Chain Dive": 4,
+    "worldsteel": 3
   },
-  "oldestArticle": "2026-06-23T08:36:17.000Z",
-  "newestArticle": "2026-07-22T15:26:00.000Z",
+  "oldestArticle": "2026-06-25T08:47:24.000Z",
+  "newestArticle": "2026-07-23T23:13:00.000Z",
   "rejected": {
     "total": 6,
     "byReason": {
-      "no-procurement-signal": 3,
-      "exclusion-theme": 1,
-      "below-amns-floor": 2
+      "no-procurement-signal": 5,
+      "exclusion-theme": 1
     }
   }
 }
