@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-07-25T07:12:12.409Z",
+  "__lastGoodGeneratedAt": "2026-07-26T07:33:44.823Z",
   "articles": [
     {
       "headline": "Mondelēz shows uneven gains on 2025 sustainable sourcing goals",
@@ -10,7 +10,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-23T13:06:00.000Z",
-      "ingestedAt": "2026-07-25T07:12:12.252Z",
+      "ingestedAt": "2026-07-26T07:33:44.583Z",
       "id": "a_721258c0f7b2",
       "steelStream": false,
       "tags": [
@@ -39,7 +39,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-07-23T06:13:35.000Z",
-      "ingestedAt": "2026-07-25T07:12:12.005Z",
+      "ingestedAt": "2026-07-26T07:33:44.339Z",
       "id": "a_ac3cef0c292a",
       "steelStream": true,
       "tags": [
@@ -67,39 +67,11 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-07-21T07:50:22.000Z",
-      "ingestedAt": "2026-07-25T07:12:12.007Z",
+      "ingestedAt": "2026-07-26T07:33:44.342Z",
       "id": "a_d417f928b3e8",
       "steelStream": true,
       "tags": [
         "Steel"
-      ],
-      "category": "Commodity Intelligence",
-      "urgency": "INFO",
-      "costImpact": 2,
-      "supplyRisk": 1,
-      "urgencyScore": 2,
-      "strategic": 1,
-      "riskScore": 1,
-      "oppScore": 1,
-      "amnsScore": 70,
-      "amnsBand": "Medium",
-      "breaking": false,
-      "trending": false
-    },
-    {
-      "headline": "15th China International Steel Congress |19-20 September 2026 | Shanghai, China",
-      "summary": "China International Steel Congress is a high-level conference focusing on the profound, overall and strategic issues of development of the steel industry. The post 15th China International Steel Congress |19-20 September 2026 | Shanghai, China appeared first on worldsteel.org .",
-      "url": "https://worldsteel.org/media/industry-member-news/2026-member-news/15th-china-international-steel-congress-19-20-september-2026-shanghai-china/",
-      "source": "worldsteel",
-      "sourceConf": 91,
-      "feedTier": 1,
-      "publishedAt": "2026-06-25T08:47:24.000Z",
-      "ingestedAt": "2026-07-25T07:12:12.008Z",
-      "id": "a_165af0c4bbc0",
-      "steelStream": true,
-      "tags": [
-        "Steel",
-        "China"
       ],
       "category": "Commodity Intelligence",
       "urgency": "INFO",
@@ -122,7 +94,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-23T23:13:00.000Z",
-      "ingestedAt": "2026-07-25T07:12:12.251Z",
+      "ingestedAt": "2026-07-26T07:33:44.582Z",
       "id": "a_300fc0d2caee",
       "steelStream": false,
       "tags": [
@@ -150,7 +122,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-24T13:58:00.000Z",
-      "ingestedAt": "2026-07-25T07:12:12.251Z",
+      "ingestedAt": "2026-07-26T07:33:44.581Z",
       "id": "a_c4baed36fbfb",
       "steelStream": false,
       "tags": [],
@@ -158,7 +130,7 @@
       "urgency": "INFO",
       "costImpact": 1,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 2,
@@ -175,7 +147,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-23T15:04:00.000Z",
-      "ingestedAt": "2026-07-25T07:12:12.251Z",
+      "ingestedAt": "2026-07-26T07:33:44.582Z",
       "id": "a_36bf16db94a8",
       "steelStream": false,
       "tags": [
@@ -202,7 +174,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-22T15:26:00.000Z",
-      "ingestedAt": "2026-07-25T07:12:12.253Z",
+      "ingestedAt": "2026-07-26T07:33:44.584Z",
       "id": "a_cab4aa0f1fb8",
       "steelStream": false,
       "tags": [
