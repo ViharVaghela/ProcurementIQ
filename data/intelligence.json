@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-07-26T07:33:44.823Z",
+  "__lastGoodGeneratedAt": "2026-07-27T08:27:47.676Z",
   "articles": [
     {
       "headline": "Mondelēz shows uneven gains on 2025 sustainable sourcing goals",
@@ -10,7 +10,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-23T13:06:00.000Z",
-      "ingestedAt": "2026-07-26T07:33:44.583Z",
+      "ingestedAt": "2026-07-27T08:27:47.141Z",
       "id": "a_721258c0f7b2",
       "steelStream": false,
       "tags": [
@@ -39,7 +39,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-07-23T06:13:35.000Z",
-      "ingestedAt": "2026-07-26T07:33:44.339Z",
+      "ingestedAt": "2026-07-27T08:27:46.586Z",
       "id": "a_ac3cef0c292a",
       "steelStream": true,
       "tags": [
@@ -67,7 +67,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-07-21T07:50:22.000Z",
-      "ingestedAt": "2026-07-26T07:33:44.342Z",
+      "ingestedAt": "2026-07-27T08:27:46.589Z",
       "id": "a_d417f928b3e8",
       "steelStream": true,
       "tags": [
@@ -94,7 +94,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-23T23:13:00.000Z",
-      "ingestedAt": "2026-07-26T07:33:44.582Z",
+      "ingestedAt": "2026-07-27T08:27:47.140Z",
       "id": "a_300fc0d2caee",
       "steelStream": false,
       "tags": [
@@ -122,7 +122,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-24T13:58:00.000Z",
-      "ingestedAt": "2026-07-26T07:33:44.581Z",
+      "ingestedAt": "2026-07-27T08:27:47.139Z",
       "id": "a_c4baed36fbfb",
       "steelStream": false,
       "tags": [],
@@ -147,7 +147,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-23T15:04:00.000Z",
-      "ingestedAt": "2026-07-26T07:33:44.582Z",
+      "ingestedAt": "2026-07-27T08:27:47.140Z",
       "id": "a_36bf16db94a8",
       "steelStream": false,
       "tags": [
@@ -174,7 +174,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-07-22T15:26:00.000Z",
-      "ingestedAt": "2026-07-26T07:33:44.584Z",
+      "ingestedAt": "2026-07-27T08:27:47.141Z",
       "id": "a_cab4aa0f1fb8",
       "steelStream": false,
       "tags": [
