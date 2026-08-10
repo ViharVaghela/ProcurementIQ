@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-08-09T05:43:47.728Z",
+  "__lastGoodGeneratedAt": "2026-08-10T06:08:25.153Z",
   "articles": [
     {
       "headline": "June 2026 crude steel production",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-07-23T06:13:35.000Z",
-      "ingestedAt": "2026-08-09T05:43:46.811Z",
+      "ingestedAt": "2026-08-10T06:08:24.041Z",
       "id": "a_ac3cef0c292a",
       "steelStream": true,
       "tags": [
@@ -38,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-07-21T07:50:22.000Z",
-      "ingestedAt": "2026-08-09T05:43:46.813Z",
+      "ingestedAt": "2026-08-10T06:08:24.043Z",
       "id": "a_d417f928b3e8",
       "steelStream": true,
       "tags": [
@@ -65,7 +65,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-08-06T13:40:00.000Z",
-      "ingestedAt": "2026-08-09T05:43:47.249Z",
+      "ingestedAt": "2026-08-10T06:08:24.586Z",
       "id": "a_0a815b851c07",
       "steelStream": false,
       "tags": [
@@ -94,7 +94,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-08-07T14:35:37.000Z",
-      "ingestedAt": "2026-08-09T05:43:47.248Z",
+      "ingestedAt": "2026-08-10T06:08:24.585Z",
       "id": "a_15584e468293",
       "steelStream": false,
       "tags": [],
@@ -119,7 +119,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-08-07T04:02:00.000Z",
-      "ingestedAt": "2026-08-09T05:43:47.249Z",
+      "ingestedAt": "2026-08-10T06:08:24.585Z",
       "id": "a_d8cf7e0dbeb0",
       "steelStream": false,
       "tags": [
@@ -147,7 +147,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-08-06T19:47:00.000Z",
-      "ingestedAt": "2026-08-09T05:43:47.249Z",
+      "ingestedAt": "2026-08-10T06:08:24.585Z",
       "id": "a_ec2e083b0e4c",
       "steelStream": false,
       "tags": [
@@ -174,7 +174,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-08-06T16:10:00.000Z",
-      "ingestedAt": "2026-08-09T05:43:47.249Z",
+      "ingestedAt": "2026-08-10T06:08:24.586Z",
       "id": "a_db244844803a",
       "steelStream": false,
       "tags": [
@@ -201,7 +201,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-08-05T18:41:00.000Z",
-      "ingestedAt": "2026-08-09T05:43:47.250Z",
+      "ingestedAt": "2026-08-10T06:08:24.586Z",
       "id": "a_6085863eae6c",
       "steelStream": false,
       "tags": [
