@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-08-23T05:25:21.532Z",
+  "__lastGoodGeneratedAt": "2026-08-24T05:34:50.819Z",
   "articles": [
     {
       "headline": "Trump’s 50% tariff on many Canada imports in effect as talks stall",
@@ -10,7 +10,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-08-22T14:23:00.000Z",
-      "ingestedAt": "2026-08-23T05:25:21.084Z",
+      "ingestedAt": "2026-08-24T05:34:50.528Z",
       "id": "a_877d174d7661",
       "steelStream": false,
       "tags": [
@@ -21,7 +21,7 @@
       "urgency": "ACTION",
       "costImpact": 3,
       "supplyRisk": 1,
-      "urgencyScore": 5,
+      "urgencyScore": 4,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
@@ -38,7 +38,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-08-20T18:47:00.000Z",
-      "ingestedAt": "2026-08-23T05:25:21.088Z",
+      "ingestedAt": "2026-08-24T05:34:50.532Z",
       "id": "a_89f386b9f731",
       "steelStream": false,
       "tags": [
@@ -66,7 +66,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-08-21T21:00:00.000Z",
-      "ingestedAt": "2026-08-23T05:25:21.086Z",
+      "ingestedAt": "2026-08-24T05:34:50.530Z",
       "id": "a_2569e5db80a5",
       "steelStream": false,
       "tags": [
@@ -93,7 +93,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-08-21T16:27:00.000Z",
-      "ingestedAt": "2026-08-23T05:25:21.086Z",
+      "ingestedAt": "2026-08-24T05:34:50.531Z",
       "id": "a_1790b2c8d2a3",
       "steelStream": false,
       "tags": [
@@ -120,7 +120,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-08-21T11:26:00.000Z",
-      "ingestedAt": "2026-08-23T05:25:21.088Z",
+      "ingestedAt": "2026-08-24T05:34:50.532Z",
       "id": "a_f578d5d7dfb4",
       "steelStream": false,
       "tags": [],
@@ -145,7 +145,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-08-20T14:11:00.000Z",
-      "ingestedAt": "2026-08-23T05:25:21.088Z",
+      "ingestedAt": "2026-08-24T05:34:50.532Z",
       "id": "a_f2ed4c110312",
       "steelStream": false,
       "tags": [],
