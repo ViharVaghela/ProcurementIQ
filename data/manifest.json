@@ -1,8 +1,8 @@
 {
   "schemaVersion": "2.1",
-  "generatedAt": "2026-09-09T09:22:33.647Z",
+  "generatedAt": "2026-09-10T09:22:06.396Z",
   "status": "degraded",
-  "articleCount": 8,
+  "articleCount": 9,
   "publishedToday": 0,
   "feedsAttempted": 5,
   "feedsSucceeded": 2,
@@ -15,7 +15,7 @@
     {
       "name": "worldsteel",
       "status": "live",
-      "lastSuccess": "2026-09-09T09:22:31.874Z",
+      "lastSuccess": "2026-09-10T09:22:05.097Z",
       "reason": null,
       "itemsKept": 2
     },
@@ -36,9 +36,9 @@
     {
       "name": "Supply Chain Dive",
       "status": "live",
-      "lastSuccess": "2026-09-09T09:22:31.874Z",
+      "lastSuccess": "2026-09-10T09:22:05.097Z",
       "reason": null,
-      "itemsKept": 6
+      "itemsKept": 7
     },
     {
       "name": "Reuters Business",
@@ -50,14 +50,14 @@
   ],
   "sourceDistribution": {
     "worldsteel": 2,
-    "Supply Chain Dive": 6
+    "Supply Chain Dive": 7
   },
   "oldestArticle": "2026-08-24T05:35:43.000Z",
-  "newestArticle": "2026-09-08T18:59:00.000Z",
+  "newestArticle": "2026-09-09T20:04:00.000Z",
   "rejected": {
-    "total": 4,
+    "total": 3,
     "byReason": {
-      "no-procurement-signal": 3,
+      "no-procurement-signal": 2,
       "below-amns-floor": 1
     }
   }
