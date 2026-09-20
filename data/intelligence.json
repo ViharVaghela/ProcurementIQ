@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-09-19T09:09:41.897Z",
+  "__lastGoodGeneratedAt": "2026-09-20T09:34:51.531Z",
   "articles": [
     {
       "headline": "July 2026 crude steel production",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-08-24T05:35:43.000Z",
-      "ingestedAt": "2026-09-19T09:09:40.790Z",
+      "ingestedAt": "2026-09-20T09:34:51.105Z",
       "id": "a_daa74db668e6",
       "steelStream": true,
       "tags": [
@@ -38,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-01T07:34:10.000Z",
-      "ingestedAt": "2026-09-19T09:09:40.788Z",
+      "ingestedAt": "2026-09-20T09:34:51.103Z",
       "id": "a_233737e2a320",
       "steelStream": true,
       "tags": [
@@ -65,7 +65,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-17T14:11:21.000Z",
-      "ingestedAt": "2026-09-19T09:09:41.185Z",
+      "ingestedAt": "2026-09-20T09:34:51.350Z",
       "id": "a_716ec0c07e54",
       "steelStream": false,
       "tags": [
@@ -92,7 +92,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-18T14:53:00.000Z",
-      "ingestedAt": "2026-09-19T09:09:41.184Z",
+      "ingestedAt": "2026-09-20T09:34:51.349Z",
       "id": "a_04e3bc5ef6b6",
       "steelStream": false,
       "tags": [
@@ -102,7 +102,7 @@
       "urgency": "INFO",
       "costImpact": 2,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 4,
       "riskScore": 1,
       "oppScore": 1,
@@ -119,7 +119,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-18T19:26:00.000Z",
-      "ingestedAt": "2026-09-19T09:09:41.184Z",
+      "ingestedAt": "2026-09-20T09:34:51.348Z",
       "id": "a_78bd847d9df9",
       "steelStream": false,
       "tags": [
@@ -129,7 +129,7 @@
       "urgency": "INFO",
       "costImpact": 1,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
@@ -146,7 +146,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-18T14:01:00.000Z",
-      "ingestedAt": "2026-09-19T09:09:41.184Z",
+      "ingestedAt": "2026-09-20T09:34:51.349Z",
       "id": "a_35d7117914b0",
       "steelStream": false,
       "tags": [],
@@ -154,7 +154,7 @@
       "urgency": "ACTION",
       "costImpact": 4,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
@@ -171,7 +171,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-18T11:18:00.000Z",
-      "ingestedAt": "2026-09-19T09:09:41.185Z",
+      "ingestedAt": "2026-09-20T09:34:51.349Z",
       "id": "a_955cf22a1f37",
       "steelStream": false,
       "tags": [
@@ -182,7 +182,7 @@
       "urgency": "INFO",
       "costImpact": 1,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 4,
       "riskScore": 1,
       "oppScore": 1,
@@ -199,7 +199,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-17T13:40:00.000Z",
-      "ingestedAt": "2026-09-19T09:09:41.185Z",
+      "ingestedAt": "2026-09-20T09:34:51.350Z",
       "id": "a_bb9d1b8b0ef9",
       "steelStream": false,
       "tags": [
