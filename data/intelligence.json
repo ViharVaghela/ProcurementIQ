@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-09-20T09:34:51.531Z",
+  "__lastGoodGeneratedAt": "2026-09-21T10:22:49.083Z",
   "articles": [
     {
       "headline": "July 2026 crude steel production",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-08-24T05:35:43.000Z",
-      "ingestedAt": "2026-09-20T09:34:51.105Z",
+      "ingestedAt": "2026-09-21T10:22:48.408Z",
       "id": "a_daa74db668e6",
       "steelStream": true,
       "tags": [
@@ -38,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-01T07:34:10.000Z",
-      "ingestedAt": "2026-09-20T09:34:51.103Z",
+      "ingestedAt": "2026-09-21T10:22:48.406Z",
       "id": "a_233737e2a320",
       "steelStream": true,
       "tags": [
@@ -65,7 +65,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-17T14:11:21.000Z",
-      "ingestedAt": "2026-09-20T09:34:51.350Z",
+      "ingestedAt": "2026-09-21T10:22:48.752Z",
       "id": "a_716ec0c07e54",
       "steelStream": false,
       "tags": [
@@ -92,7 +92,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-18T14:53:00.000Z",
-      "ingestedAt": "2026-09-20T09:34:51.349Z",
+      "ingestedAt": "2026-09-21T10:22:48.751Z",
       "id": "a_04e3bc5ef6b6",
       "steelStream": false,
       "tags": [
@@ -112,6 +112,61 @@
       "trending": false
     },
     {
+      "headline": "The hidden cost of operating two shipping systems",
+      "summary": "Freight sat out the shipping consolidation trend. Here&#39;s what closing that gap actually looks like.",
+      "url": "https://www.supplychaindive.com/spons/the-hidden-cost-of-operating-two-shipping-systems/830822/",
+      "source": "Supply Chain Dive",
+      "sourceConf": 85,
+      "feedTier": 2,
+      "publishedAt": "2026-09-21T09:00:00.000Z",
+      "ingestedAt": "2026-09-21T10:22:48.750Z",
+      "id": "a_906ba184148f",
+      "steelStream": false,
+      "tags": [
+        "Freight"
+      ],
+      "category": "Risk Intelligence",
+      "urgency": "MONITOR",
+      "costImpact": 2,
+      "supplyRisk": 1,
+      "urgencyScore": 3,
+      "strategic": 2,
+      "riskScore": 1,
+      "oppScore": 1,
+      "amnsScore": 50,
+      "amnsBand": "Low",
+      "breaking": false,
+      "trending": false
+    },
+    {
+      "headline": "When demand won’t sit still: Building a more flexible warehouse network",
+      "summary": "See how flexible warehousing can help supply chains adapt as demand, inventory and markets shift.",
+      "url": "https://www.supplychaindive.com/spons/when-demand-wont-sit-still-building-a-more-flexible-warehouse-network/830243/",
+      "source": "Supply Chain Dive",
+      "sourceConf": 85,
+      "feedTier": 2,
+      "publishedAt": "2026-09-21T09:00:00.000Z",
+      "ingestedAt": "2026-09-21T10:22:48.750Z",
+      "id": "a_711b751f192c",
+      "steelStream": false,
+      "tags": [
+        "Iron Ore",
+        "Logistics"
+      ],
+      "category": "Market Intelligence",
+      "urgency": "INFO",
+      "costImpact": 1,
+      "supplyRisk": 1,
+      "urgencyScore": 3,
+      "strategic": 1,
+      "riskScore": 1,
+      "oppScore": 1,
+      "amnsScore": 50,
+      "amnsBand": "Low",
+      "breaking": false,
+      "trending": false
+    },
+    {
       "headline": "FedEx levies fees on US imports from Canada, Europe and others",
       "summary": "The demand surcharges, which also include higher fees for China-to-U.S. volume, will take effect as parcel shippers gear up for peak season.",
       "url": "https://www.supplychaindive.com/news/fedex-levies-fees-on-us-imports-from-canada-europe-and-others/830797/",
@@ -119,7 +174,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-18T19:26:00.000Z",
-      "ingestedAt": "2026-09-20T09:34:51.348Z",
+      "ingestedAt": "2026-09-21T10:22:48.751Z",
       "id": "a_78bd847d9df9",
       "steelStream": false,
       "tags": [
@@ -146,7 +201,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-18T14:01:00.000Z",
-      "ingestedAt": "2026-09-20T09:34:51.349Z",
+      "ingestedAt": "2026-09-21T10:22:48.751Z",
       "id": "a_35d7117914b0",
       "steelStream": false,
       "tags": [],
@@ -171,7 +226,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-18T11:18:00.000Z",
-      "ingestedAt": "2026-09-20T09:34:51.349Z",
+      "ingestedAt": "2026-09-21T10:22:48.751Z",
       "id": "a_955cf22a1f37",
       "steelStream": false,
       "tags": [
@@ -186,33 +241,6 @@
       "strategic": 4,
       "riskScore": 1,
       "oppScore": 1,
-      "amnsScore": 50,
-      "amnsBand": "Low",
-      "breaking": false,
-      "trending": false
-    },
-    {
-      "headline": "San Pedro Ports seek zero-emission truck usage boost via new incentive program",
-      "summary": "The proposed program would pay up to $36,000 per year for qualifying trucks that operate at the port complex.",
-      "url": "https://www.supplychaindive.com/news/san-pedro-ports-seek-zero-emission-truck-usage-boost-via-new-incentive-prog/830536/",
-      "source": "Supply Chain Dive",
-      "sourceConf": 85,
-      "feedTier": 2,
-      "publishedAt": "2026-09-17T13:40:00.000Z",
-      "ingestedAt": "2026-09-20T09:34:51.350Z",
-      "id": "a_bb9d1b8b0ef9",
-      "steelStream": false,
-      "tags": [
-        "ESG"
-      ],
-      "category": "Risk Intelligence",
-      "urgency": "INFO",
-      "costImpact": 1,
-      "supplyRisk": 1,
-      "urgencyScore": 2,
-      "strategic": 1,
-      "riskScore": 1,
-      "oppScore": 4,
       "amnsScore": 50,
       "amnsBand": "Low",
       "breaking": false,
