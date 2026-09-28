@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-09-27T10:20:42.740Z",
+  "__lastGoodGeneratedAt": "2026-09-28T11:25:03.984Z",
   "articles": [
     {
       "headline": "August 2026 crude steel production",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-24T08:40:42.000Z",
-      "ingestedAt": "2026-09-27T10:20:42.033Z",
+      "ingestedAt": "2026-09-28T11:25:03.332Z",
       "id": "a_edd93a699d42",
       "steelStream": true,
       "tags": [
@@ -31,6 +31,60 @@
       "trending": false
     },
     {
+      "headline": "17th Steelie Awards finalists announced",
+      "summary": "worldsteel has announced the finalists for the 17th Steelie Awards. The Steelie Awards recognise member companies for their contribution to the steel industry over a one-year period in six different categories. The winners will be revealed on Monday, 12 October.",
+      "url": "https://worldsteel.org/media/press-releases/2026/17th-steelie-awards-finalists-announced/",
+      "source": "worldsteel",
+      "sourceConf": 91,
+      "feedTier": 1,
+      "publishedAt": "2026-09-28T06:31:46.000Z",
+      "ingestedAt": "2026-09-28T11:25:03.329Z",
+      "id": "a_f8a6d3feea98",
+      "steelStream": true,
+      "tags": [
+        "Steel"
+      ],
+      "category": "Commodity Intelligence",
+      "urgency": "INFO",
+      "costImpact": 2,
+      "supplyRisk": 1,
+      "urgencyScore": 3,
+      "strategic": 1,
+      "riskScore": 1,
+      "oppScore": 1,
+      "amnsScore": 70,
+      "amnsBand": "Medium",
+      "breaking": false,
+      "trending": false
+    },
+    {
+      "headline": "Steelie Awards 2026",
+      "summary": "The post Steelie Awards 2026 appeared first on worldsteel.org .",
+      "url": "https://worldsteel.org/about-us/steelie-awards/steelie-awards-2026/",
+      "source": "worldsteel",
+      "sourceConf": 91,
+      "feedTier": 1,
+      "publishedAt": "2026-09-28T05:52:32.000Z",
+      "ingestedAt": "2026-09-28T11:25:03.331Z",
+      "id": "a_8d2a8e77fa57",
+      "steelStream": true,
+      "tags": [
+        "Steel"
+      ],
+      "category": "Commodity Intelligence",
+      "urgency": "INFO",
+      "costImpact": 2,
+      "supplyRisk": 1,
+      "urgencyScore": 3,
+      "strategic": 1,
+      "riskScore": 1,
+      "oppScore": 1,
+      "amnsScore": 70,
+      "amnsBand": "Medium",
+      "breaking": false,
+      "trending": false
+    },
+    {
       "headline": "6 food manufacturers talk supply chain tactics",
       "summary": "General Mills, Nestl&eacute; and more discussed how they are cutting operational costs, navigating uneven freight rates and sharpening demand forecasting at a Barclays conference.",
       "url": "https://www.supplychaindive.com/news/6-food-manufacturers-talk-supply-chain-tactics/831214/",
@@ -38,7 +92,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-25T14:48:00.000Z",
-      "ingestedAt": "2026-09-27T10:20:42.333Z",
+      "ingestedAt": "2026-09-28T11:25:03.563Z",
       "id": "a_0930e8791c00",
       "steelStream": false,
       "tags": [
@@ -66,7 +120,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-21T06:50:32.000Z",
-      "ingestedAt": "2026-09-27T10:20:42.034Z",
+      "ingestedAt": "2026-09-28T11:25:03.332Z",
       "id": "a_fb374e713647",
       "steelStream": true,
       "tags": [
@@ -93,7 +147,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-01T07:34:10.000Z",
-      "ingestedAt": "2026-09-27T10:20:42.035Z",
+      "ingestedAt": "2026-09-28T11:25:03.333Z",
       "id": "a_233737e2a320",
       "steelStream": true,
       "tags": [
@@ -113,6 +167,31 @@
       "trending": false
     },
     {
+      "headline": "The intelligence advantage: Moving beyond benchmarking to network-wide insights",
+      "summary": "How network-scale intelligence helps businesses focus resources on the opportunities that matter most.",
+      "url": "https://www.supplychaindive.com/spons/the-intelligence-advantage-moving-beyond-benchmarking-to-network-wide-insi/830975/",
+      "source": "Supply Chain Dive",
+      "sourceConf": 85,
+      "feedTier": 2,
+      "publishedAt": "2026-09-28T09:00:00.000Z",
+      "ingestedAt": "2026-09-28T11:25:03.562Z",
+      "id": "a_7b86c708f7a2",
+      "steelStream": false,
+      "tags": [],
+      "category": "Risk Intelligence",
+      "urgency": "INFO",
+      "costImpact": 1,
+      "supplyRisk": 1,
+      "urgencyScore": 3,
+      "strategic": 1,
+      "riskScore": 1,
+      "oppScore": 1,
+      "amnsScore": 50,
+      "amnsBand": "Low",
+      "breaking": false,
+      "trending": false
+    },
+    {
       "headline": "Lego to spend $400M to add warehouse space at Mexico plant",
       "summary": "The toymaker&#39;s investment will also support expanded packing capabilities to strengthen its regional supply chain network in the Americas.",
       "url": "https://www.supplychaindive.com/news/lego-to-spend-400m-to-add-warehouse-space-at-mexico-plant/831302/",
@@ -120,7 +199,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-25T14:29:00.000Z",
-      "ingestedAt": "2026-09-27T10:20:42.334Z",
+      "ingestedAt": "2026-09-28T11:25:03.564Z",
       "id": "a_93923a504459",
       "steelStream": false,
       "tags": [
@@ -147,7 +226,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-25T11:21:00.000Z",
-      "ingestedAt": "2026-09-27T10:20:42.334Z",
+      "ingestedAt": "2026-09-28T11:25:03.564Z",
       "id": "a_548922391c33",
       "steelStream": false,
       "tags": [
@@ -174,7 +253,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-24T16:47:00.000Z",
-      "ingestedAt": "2026-09-27T10:20:42.334Z",
+      "ingestedAt": "2026-09-28T11:25:03.565Z",
       "id": "a_25cce7bacb45",
       "steelStream": false,
       "tags": [
@@ -201,7 +280,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-24T14:55:00.000Z",
-      "ingestedAt": "2026-09-27T10:20:42.334Z",
+      "ingestedAt": "2026-09-28T11:25:03.565Z",
       "id": "a_1e0d9d8d42ae",
       "steelStream": false,
       "tags": [
