@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-09-28T11:25:03.984Z",
+  "__lastGoodGeneratedAt": "2026-09-29T11:03:01.924Z",
   "articles": [
     {
       "headline": "August 2026 crude steel production",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-24T08:40:42.000Z",
-      "ingestedAt": "2026-09-28T11:25:03.332Z",
+      "ingestedAt": "2026-09-29T11:03:00.847Z",
       "id": "a_edd93a699d42",
       "steelStream": true,
       "tags": [
@@ -38,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-28T06:31:46.000Z",
-      "ingestedAt": "2026-09-28T11:25:03.329Z",
+      "ingestedAt": "2026-09-29T11:03:00.844Z",
       "id": "a_f8a6d3feea98",
       "steelStream": true,
       "tags": [
@@ -48,7 +48,7 @@
       "urgency": "INFO",
       "costImpact": 2,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
@@ -65,7 +65,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-28T05:52:32.000Z",
-      "ingestedAt": "2026-09-28T11:25:03.331Z",
+      "ingestedAt": "2026-09-29T11:03:00.847Z",
       "id": "a_8d2a8e77fa57",
       "steelStream": true,
       "tags": [
@@ -75,7 +75,7 @@
       "urgency": "INFO",
       "costImpact": 2,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
@@ -92,7 +92,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-25T14:48:00.000Z",
-      "ingestedAt": "2026-09-28T11:25:03.563Z",
+      "ingestedAt": "2026-09-29T11:03:01.361Z",
       "id": "a_0930e8791c00",
       "steelStream": false,
       "tags": [
@@ -120,7 +120,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-21T06:50:32.000Z",
-      "ingestedAt": "2026-09-28T11:25:03.332Z",
+      "ingestedAt": "2026-09-29T11:03:00.848Z",
       "id": "a_fb374e713647",
       "steelStream": true,
       "tags": [
@@ -147,7 +147,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-01T07:34:10.000Z",
-      "ingestedAt": "2026-09-28T11:25:03.333Z",
+      "ingestedAt": "2026-09-29T11:03:00.848Z",
       "id": "a_233737e2a320",
       "steelStream": true,
       "tags": [
@@ -167,6 +167,33 @@
       "trending": false
     },
     {
+      "headline": "Trade groups urge USTR to extend pause on China-linked ship fees",
+      "summary": "The National Retail Federation and others said a continued halt to fees would help ease uncertainty as stakeholders face elevated transportation costs.",
+      "url": "https://www.supplychaindive.com/news/trade-groups-urge-ustr-to-extend-pause-on-china-linked-ship-fees/831387/",
+      "source": "Supply Chain Dive",
+      "sourceConf": 85,
+      "feedTier": 2,
+      "publishedAt": "2026-09-28T14:42:50.000Z",
+      "ingestedAt": "2026-09-29T11:03:01.359Z",
+      "id": "a_cd02f7e6846b",
+      "steelStream": false,
+      "tags": [
+        "China"
+      ],
+      "category": "Risk Intelligence",
+      "urgency": "INFO",
+      "costImpact": 1,
+      "supplyRisk": 4,
+      "urgencyScore": 3,
+      "strategic": 1,
+      "riskScore": 3,
+      "oppScore": 2,
+      "amnsScore": 50,
+      "amnsBand": "Low",
+      "breaking": false,
+      "trending": false
+    },
+    {
       "headline": "The intelligence advantage: Moving beyond benchmarking to network-wide insights",
       "summary": "How network-scale intelligence helps businesses focus resources on the opportunities that matter most.",
       "url": "https://www.supplychaindive.com/spons/the-intelligence-advantage-moving-beyond-benchmarking-to-network-wide-insi/830975/",
@@ -174,7 +201,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-28T09:00:00.000Z",
-      "ingestedAt": "2026-09-28T11:25:03.562Z",
+      "ingestedAt": "2026-09-29T11:03:01.360Z",
       "id": "a_7b86c708f7a2",
       "steelStream": false,
       "tags": [],
@@ -182,7 +209,7 @@
       "urgency": "INFO",
       "costImpact": 1,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
@@ -199,7 +226,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-25T14:29:00.000Z",
-      "ingestedAt": "2026-09-28T11:25:03.564Z",
+      "ingestedAt": "2026-09-29T11:03:01.361Z",
       "id": "a_93923a504459",
       "steelStream": false,
       "tags": [
@@ -226,7 +253,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-25T11:21:00.000Z",
-      "ingestedAt": "2026-09-28T11:25:03.564Z",
+      "ingestedAt": "2026-09-29T11:03:01.362Z",
       "id": "a_548922391c33",
       "steelStream": false,
       "tags": [
@@ -253,7 +280,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-24T16:47:00.000Z",
-      "ingestedAt": "2026-09-28T11:25:03.565Z",
+      "ingestedAt": "2026-09-29T11:03:01.362Z",
       "id": "a_25cce7bacb45",
       "steelStream": false,
       "tags": [
@@ -267,34 +294,6 @@
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
-      "amnsScore": 50,
-      "amnsBand": "Low",
-      "breaking": false,
-      "trending": false
-    },
-    {
-      "headline": "US, China to extend trade war truce by 2 months",
-      "summary": "The pact reached last year to lower tariffs and suspend other trade actions will stay in effect until Jan. 10, Treasury Secretary Scott Bessent told Fox News.",
-      "url": "https://www.supplychaindive.com/news/us-china-to-extend-trade-war-truce-by-2-months/831251/",
-      "source": "Supply Chain Dive",
-      "sourceConf": 85,
-      "feedTier": 2,
-      "publishedAt": "2026-09-24T14:55:00.000Z",
-      "ingestedAt": "2026-09-28T11:25:03.565Z",
-      "id": "a_1e0d9d8d42ae",
-      "steelStream": false,
-      "tags": [
-        "China",
-        "Trade Tariffs"
-      ],
-      "category": "Risk Intelligence",
-      "urgency": "INFO",
-      "costImpact": 1,
-      "supplyRisk": 4,
-      "urgencyScore": 2,
-      "strategic": 1,
-      "riskScore": 3,
-      "oppScore": 2,
       "amnsScore": 50,
       "amnsBand": "Low",
       "breaking": false,
