@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-10-02T10:51:45.406Z",
+  "__lastGoodGeneratedAt": "2026-10-03T10:11:33.211Z",
   "articles": [
     {
       "headline": "August 2026 crude steel production",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-24T08:40:42.000Z",
-      "ingestedAt": "2026-10-02T10:51:44.610Z",
+      "ingestedAt": "2026-10-03T10:11:32.055Z",
       "id": "a_edd93a699d42",
       "steelStream": true,
       "tags": [
@@ -38,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-28T06:31:46.000Z",
-      "ingestedAt": "2026-10-02T10:51:44.608Z",
+      "ingestedAt": "2026-10-03T10:11:32.053Z",
       "id": "a_f8a6d3feea98",
       "steelStream": true,
       "tags": [
@@ -65,7 +65,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-28T05:52:32.000Z",
-      "ingestedAt": "2026-10-02T10:51:44.610Z",
+      "ingestedAt": "2026-10-03T10:11:32.054Z",
       "id": "a_8d2a8e77fa57",
       "steelStream": true,
       "tags": [
@@ -92,7 +92,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-21T06:50:32.000Z",
-      "ingestedAt": "2026-10-02T10:51:44.610Z",
+      "ingestedAt": "2026-10-03T10:11:32.055Z",
       "id": "a_fb374e713647",
       "steelStream": true,
       "tags": [
@@ -119,7 +119,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-10-01T12:52:00.000Z",
-      "ingestedAt": "2026-10-02T10:51:44.964Z",
+      "ingestedAt": "2026-10-03T10:11:32.596Z",
       "id": "a_06cbfdb35a68",
       "steelStream": false,
       "tags": [
@@ -130,7 +130,7 @@
       "urgency": "INFO",
       "costImpact": 1,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
@@ -147,7 +147,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-10-01T11:40:00.000Z",
-      "ingestedAt": "2026-10-02T10:51:44.964Z",
+      "ingestedAt": "2026-10-03T10:11:32.596Z",
       "id": "a_04291ef8fc52",
       "steelStream": false,
       "tags": [
@@ -157,7 +157,7 @@
       "urgency": "MONITOR",
       "costImpact": 1,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
@@ -174,7 +174,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-30T19:57:00.000Z",
-      "ingestedAt": "2026-10-02T10:51:44.964Z",
+      "ingestedAt": "2026-10-03T10:11:32.596Z",
       "id": "a_12a994642988",
       "steelStream": false,
       "tags": [
@@ -189,33 +189,6 @@
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
-      "amnsScore": 50,
-      "amnsBand": "Low",
-      "breaking": false,
-      "trending": false
-    },
-    {
-      "headline": "Mars hikes sustainably sourced cocoa but falls short of 2025 100% goal",
-      "summary": "The candy and pet care maker&rsquo;s suppliers sourced 98% of cocoa through a responsible sourcing program in 2025.",
-      "url": "https://www.supplychaindive.com/news/mars-hikes-sustainably-sourced-cocoa-but-falls-short-of-2025-100-goal/831689/",
-      "source": "Supply Chain Dive",
-      "sourceConf": 85,
-      "feedTier": 2,
-      "publishedAt": "2026-09-30T15:06:00.000Z",
-      "ingestedAt": "2026-10-02T10:51:44.965Z",
-      "id": "a_72dbf854eb08",
-      "steelStream": false,
-      "tags": [
-        "ESG"
-      ],
-      "category": "Supplier Intelligence",
-      "urgency": "INFO",
-      "costImpact": 3,
-      "supplyRisk": 1,
-      "urgencyScore": 2,
-      "strategic": 1,
-      "riskScore": 1,
-      "oppScore": 2,
       "amnsScore": 50,
       "amnsBand": "Low",
       "breaking": false,
