@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-10-03T10:11:33.211Z",
+  "__lastGoodGeneratedAt": "2026-10-04T10:52:47.568Z",
   "articles": [
     {
       "headline": "August 2026 crude steel production",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-24T08:40:42.000Z",
-      "ingestedAt": "2026-10-03T10:11:32.055Z",
+      "ingestedAt": "2026-10-04T10:52:46.730Z",
       "id": "a_edd93a699d42",
       "steelStream": true,
       "tags": [
@@ -38,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-28T06:31:46.000Z",
-      "ingestedAt": "2026-10-03T10:11:32.053Z",
+      "ingestedAt": "2026-10-04T10:52:46.728Z",
       "id": "a_f8a6d3feea98",
       "steelStream": true,
       "tags": [
@@ -65,7 +65,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-28T05:52:32.000Z",
-      "ingestedAt": "2026-10-03T10:11:32.054Z",
+      "ingestedAt": "2026-10-04T10:52:46.730Z",
       "id": "a_8d2a8e77fa57",
       "steelStream": true,
       "tags": [
@@ -92,7 +92,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-09-21T06:50:32.000Z",
-      "ingestedAt": "2026-10-03T10:11:32.055Z",
+      "ingestedAt": "2026-10-04T10:52:46.730Z",
       "id": "a_fb374e713647",
       "steelStream": true,
       "tags": [
@@ -119,7 +119,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-10-01T12:52:00.000Z",
-      "ingestedAt": "2026-10-03T10:11:32.596Z",
+      "ingestedAt": "2026-10-04T10:52:47.166Z",
       "id": "a_06cbfdb35a68",
       "steelStream": false,
       "tags": [
@@ -147,7 +147,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-10-01T11:40:00.000Z",
-      "ingestedAt": "2026-10-03T10:11:32.596Z",
+      "ingestedAt": "2026-10-04T10:52:47.166Z",
       "id": "a_04291ef8fc52",
       "steelStream": false,
       "tags": [
@@ -174,7 +174,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-09-30T19:57:00.000Z",
-      "ingestedAt": "2026-10-03T10:11:32.596Z",
+      "ingestedAt": "2026-10-04T10:52:47.166Z",
       "id": "a_12a994642988",
       "steelStream": false,
       "tags": [
