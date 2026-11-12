@@ -1,8 +1,8 @@
 {
   "schemaVersion": "2.1",
-  "generatedAt": "2026-11-11T12:24:18.732Z",
+  "generatedAt": "2026-11-12T13:30:21.026Z",
   "status": "degraded",
-  "articleCount": 8,
+  "articleCount": 4,
   "publishedToday": 0,
   "feedsAttempted": 5,
   "feedsSucceeded": 2,
@@ -15,9 +15,9 @@
     {
       "name": "worldsteel",
       "status": "live",
-      "lastSuccess": "2026-11-11T12:24:17.056Z",
+      "lastSuccess": "2026-11-12T13:30:19.073Z",
       "reason": null,
-      "itemsKept": 5
+      "itemsKept": 1
     },
     {
       "name": "Mining.com",
@@ -36,7 +36,7 @@
     {
       "name": "Supply Chain Dive",
       "status": "live",
-      "lastSuccess": "2026-11-11T12:24:17.056Z",
+      "lastSuccess": "2026-11-12T13:30:19.073Z",
       "reason": null,
       "itemsKept": 3
     },
@@ -49,11 +49,11 @@
     }
   ],
   "sourceDistribution": {
-    "worldsteel": 5,
+    "worldsteel": 1,
     "Supply Chain Dive": 3
   },
-  "oldestArticle": "2026-10-12T14:38:53.000Z",
-  "newestArticle": "2026-11-10T15:11:00.000Z",
+  "oldestArticle": "2026-10-23T06:02:59.000Z",
+  "newestArticle": "2026-11-11T18:55:52.000Z",
   "rejected": {
     "total": 7,
     "byReason": {
