@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-11-19T14:05:33.741Z",
+  "__lastGoodGeneratedAt": "2026-11-20T13:48:13.725Z",
   "articles": [
     {
       "headline": "September 2026 crude steel production",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-10-23T06:02:59.000Z",
-      "ingestedAt": "2026-11-19T14:05:32.853Z",
+      "ingestedAt": "2026-11-20T13:48:13.100Z",
       "id": "a_2da32ae5ef64",
       "steelStream": true,
       "tags": [
@@ -31,34 +31,6 @@
       "trending": false
     },
     {
-      "headline": "Amazon to expand fuel and logistics surcharge to more services",
-      "summary": "The 3.5% surcharge will apply to transportation fees for bulk storage and replenishment services starting in February as the company faces fuel cost pressures.",
-      "url": "https://www.supplychaindive.com/news/amazon-to-expand-fuel-and-logistics-surcharge-to-more-services/874693/",
-      "source": "Supply Chain Dive",
-      "sourceConf": 85,
-      "feedTier": 2,
-      "publishedAt": "2026-11-17T14:36:17.000Z",
-      "ingestedAt": "2026-11-19T14:05:33.300Z",
-      "id": "a_9a802734b8e9",
-      "steelStream": false,
-      "tags": [
-        "Iron Ore",
-        "Logistics"
-      ],
-      "category": "Risk Intelligence",
-      "urgency": "INFO",
-      "costImpact": 4,
-      "supplyRisk": 1,
-      "urgencyScore": 2,
-      "strategic": 1,
-      "riskScore": 1,
-      "oppScore": 1,
-      "amnsScore": 71,
-      "amnsBand": "Medium",
-      "breaking": false,
-      "trending": false
-    },
-    {
       "headline": "World Women in Steel (WWIS)",
       "summary": "The post World Women in Steel (WWIS) appeared first on worldsteel.org .",
       "url": "https://worldsteel.org/steel-people/world-women-in-steel-wwis/",
@@ -66,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-18T12:36:26.000Z",
-      "ingestedAt": "2026-11-19T14:05:32.851Z",
+      "ingestedAt": "2026-11-20T13:48:13.097Z",
       "id": "a_7ad0e5d768de",
       "steelStream": true,
       "tags": [
@@ -93,7 +65,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-18T12:20:48.000Z",
-      "ingestedAt": "2026-11-19T14:05:32.852Z",
+      "ingestedAt": "2026-11-20T13:48:13.100Z",
       "id": "a_b9dc1e2474eb",
       "steelStream": true,
       "tags": [
@@ -120,7 +92,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-18T12:59:00.000Z",
-      "ingestedAt": "2026-11-19T14:05:33.299Z",
+      "ingestedAt": "2026-11-20T13:48:13.480Z",
       "id": "a_c22dcd466b97",
       "steelStream": false,
       "tags": [
@@ -141,6 +113,34 @@
       "trending": false
     },
     {
+      "headline": "Meta strikes deals to boost low-carbon materials production",
+      "summary": "The multiyear agreements would cover concrete, plastics and steel and help offset emissions in Meta&rsquo;s data center supply chain, the Facebook parent company said.",
+      "url": "https://www.supplychaindive.com/news/meta-strikes-deals-to-boost-low-carbon-materials-production/875095/",
+      "source": "Supply Chain Dive",
+      "sourceConf": 85,
+      "feedTier": 2,
+      "publishedAt": "2026-11-19T17:30:00.000Z",
+      "ingestedAt": "2026-11-20T13:48:13.479Z",
+      "id": "a_6cb5d6c85cbd",
+      "steelStream": false,
+      "tags": [
+        "Steel",
+        "ESG"
+      ],
+      "category": "Risk Intelligence",
+      "urgency": "INFO",
+      "costImpact": 1,
+      "supplyRisk": 1,
+      "urgencyScore": 3,
+      "strategic": 1,
+      "riskScore": 1,
+      "oppScore": 1,
+      "amnsScore": 55,
+      "amnsBand": "Low",
+      "breaking": false,
+      "trending": false
+    },
+    {
       "headline": "Starbucks inventory availability at ‘all-time high’ with daily deliveries, CEO says",
       "summary": "The coffeehouse chain has been testing a 24-hour operating model to improve inventory availability and build a faster, more reliable supply chain.",
       "url": "https://www.supplychaindive.com/news/starbucks-inventory-availability-at-all-time-high-with-daily-deliveries/874923/",
@@ -148,7 +148,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-18T15:38:15.000Z",
-      "ingestedAt": "2026-11-19T14:05:33.299Z",
+      "ingestedAt": "2026-11-20T13:48:13.480Z",
       "id": "a_fa83b219d5b8",
       "steelStream": false,
       "tags": [
@@ -158,7 +158,7 @@
       "urgency": "INFO",
       "costImpact": 1,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
