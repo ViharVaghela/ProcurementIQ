@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-11-22T13:02:53.342Z",
+  "__lastGoodGeneratedAt": "2026-11-23T15:39:22.767Z",
   "articles": [
     {
       "headline": "World Women in Steel (WWIS)",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-18T12:36:26.000Z",
-      "ingestedAt": "2026-11-22T13:02:52.801Z",
+      "ingestedAt": "2026-11-23T15:39:21.871Z",
       "id": "a_7ad0e5d768de",
       "steelStream": true,
       "tags": [
@@ -37,7 +37,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-18T12:20:48.000Z",
-      "ingestedAt": "2026-11-22T13:02:52.803Z",
+      "ingestedAt": "2026-11-23T15:39:21.874Z",
       "id": "a_b9dc1e2474eb",
       "steelStream": true,
       "tags": [
@@ -57,6 +57,33 @@
       "trending": false
     },
     {
+      "headline": "Taking the busywork out of business buying",
+      "summary": "Amazon Business brings inventory and procurement systems together to make business buying faster and more efficient",
+      "url": "https://www.supplychaindive.com/spons/taking-the-busywork-out-of-business-buying/874853/",
+      "source": "Supply Chain Dive",
+      "sourceConf": 85,
+      "feedTier": 2,
+      "publishedAt": "2026-11-23T10:00:00.000Z",
+      "ingestedAt": "2026-11-23T15:39:22.319Z",
+      "id": "a_d6d0bd1630f9",
+      "steelStream": false,
+      "tags": [
+        "Iron Ore"
+      ],
+      "category": "Risk Intelligence",
+      "urgency": "INFO",
+      "costImpact": 1,
+      "supplyRisk": 1,
+      "urgencyScore": 3,
+      "strategic": 1,
+      "riskScore": 1,
+      "oppScore": 1,
+      "amnsScore": 55,
+      "amnsBand": "Low",
+      "breaking": false,
+      "trending": false
+    },
+    {
       "headline": "Meta strikes deals to boost low-carbon materials production",
       "summary": "The multiyear agreements would cover concrete, plastics and steel and help offset emissions in Meta&rsquo;s data center supply chain, the Facebook parent company said.",
       "url": "https://www.supplychaindive.com/news/meta-strikes-deals-to-boost-low-carbon-materials-production/875095/",
@@ -64,7 +91,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-19T17:30:00.000Z",
-      "ingestedAt": "2026-11-22T13:02:53.139Z",
+      "ingestedAt": "2026-11-23T15:39:22.320Z",
       "id": "a_6cb5d6c85cbd",
       "steelStream": false,
       "tags": [
@@ -92,7 +119,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-20T15:19:00.000Z",
-      "ingestedAt": "2026-11-22T13:02:53.139Z",
+      "ingestedAt": "2026-11-23T15:39:22.319Z",
       "id": "a_29655ff5c7e3",
       "steelStream": false,
       "tags": [
@@ -119,7 +146,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-20T15:09:00.000Z",
-      "ingestedAt": "2026-11-22T13:02:53.139Z",
+      "ingestedAt": "2026-11-23T15:39:22.319Z",
       "id": "a_fcac86140477",
       "steelStream": false,
       "tags": [],
@@ -130,33 +157,6 @@
       "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 3,
-      "oppScore": 1,
-      "amnsScore": 50,
-      "amnsBand": "Low",
-      "breaking": false,
-      "trending": false
-    },
-    {
-      "headline": "Starbucks inventory availability at ‘all-time high’ with daily deliveries, CEO says",
-      "summary": "The coffeehouse chain has been testing a 24-hour operating model to improve inventory availability and build a faster, more reliable supply chain.",
-      "url": "https://www.supplychaindive.com/news/starbucks-inventory-availability-at-all-time-high-with-daily-deliveries/874923/",
-      "source": "Supply Chain Dive",
-      "sourceConf": 85,
-      "feedTier": 2,
-      "publishedAt": "2026-11-18T15:38:15.000Z",
-      "ingestedAt": "2026-11-22T13:02:53.140Z",
-      "id": "a_fa83b219d5b8",
-      "steelStream": false,
-      "tags": [
-        "Iron Ore"
-      ],
-      "category": "Risk Intelligence",
-      "urgency": "INFO",
-      "costImpact": 1,
-      "supplyRisk": 1,
-      "urgencyScore": 2,
-      "strategic": 1,
-      "riskScore": 1,
       "oppScore": 1,
       "amnsScore": 50,
       "amnsBand": "Low",
