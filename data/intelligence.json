@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-11-24T15:29:35.898Z",
+  "__lastGoodGeneratedAt": "2026-11-25T15:16:16.983Z",
   "articles": [
     {
       "headline": "October 2026 crude steel production",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-24T09:02:29.000Z",
-      "ingestedAt": "2026-11-24T15:29:35.222Z",
+      "ingestedAt": "2026-11-25T15:16:16.260Z",
       "id": "a_1c599f36ffeb",
       "steelStream": true,
       "tags": [
@@ -21,11 +21,38 @@
       "urgency": "INFO",
       "costImpact": 3,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 2,
       "amnsScore": 72,
+      "amnsBand": "Medium",
+      "breaking": false,
+      "trending": false
+    },
+    {
+      "headline": "worldsteel announces steelChallenge-21 World Championship Finalists",
+      "summary": "The Regional Championship of steelChallenge-21 took place online for 24 hours on 17 November 2026, with 1,698 registered participants worldwide — 620 university students, 748 industry professionals, and 330 high school students. Find out who the finalists are via this link.",
+      "url": "https://worldsteel.org/media/press-releases/2026/worldsteel-announces-steelchallenge-21-world-championship-finaliststs/",
+      "source": "worldsteel",
+      "sourceConf": 91,
+      "feedTier": 1,
+      "publishedAt": "2026-11-25T07:14:18.000Z",
+      "ingestedAt": "2026-11-25T15:16:16.258Z",
+      "id": "a_33db51ec0f3a",
+      "steelStream": true,
+      "tags": [
+        "Steel"
+      ],
+      "category": "Commodity Intelligence",
+      "urgency": "INFO",
+      "costImpact": 2,
+      "supplyRisk": 1,
+      "urgencyScore": 3,
+      "strategic": 1,
+      "riskScore": 1,
+      "oppScore": 1,
+      "amnsScore": 70,
       "amnsBand": "Medium",
       "breaking": false,
       "trending": false
@@ -38,7 +65,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-18T12:36:26.000Z",
-      "ingestedAt": "2026-11-24T15:29:35.224Z",
+      "ingestedAt": "2026-11-25T15:16:16.260Z",
       "id": "a_7ad0e5d768de",
       "steelStream": true,
       "tags": [
@@ -65,7 +92,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-18T12:20:48.000Z",
-      "ingestedAt": "2026-11-24T15:29:35.224Z",
+      "ingestedAt": "2026-11-25T15:16:16.261Z",
       "id": "a_b9dc1e2474eb",
       "steelStream": true,
       "tags": [
@@ -92,7 +119,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-23T10:00:00.000Z",
-      "ingestedAt": "2026-11-24T15:29:35.607Z",
+      "ingestedAt": "2026-11-25T15:16:16.643Z",
       "id": "a_d6d0bd1630f9",
       "steelStream": false,
       "tags": [
@@ -119,7 +146,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-23T16:05:59.000Z",
-      "ingestedAt": "2026-11-24T15:29:35.606Z",
+      "ingestedAt": "2026-11-25T15:16:16.642Z",
       "id": "a_d870f086c61d",
       "steelStream": false,
       "tags": [
@@ -127,33 +154,6 @@
       ],
       "category": "Supplier Intelligence",
       "urgency": "MONITOR",
-      "costImpact": 1,
-      "supplyRisk": 1,
-      "urgencyScore": 3,
-      "strategic": 1,
-      "riskScore": 1,
-      "oppScore": 1,
-      "amnsScore": 51,
-      "amnsBand": "Low",
-      "breaking": false,
-      "trending": false
-    },
-    {
-      "headline": "Nvidia gets more supplier capacity to meet AI demand",
-      "summary": "The chipmaker unveiled the latest production agreements a month after securing other deals from partners.",
-      "url": "https://www.supplychaindive.com/news/nvidia-gets-more-supplier-capacity-to-meet-ai-demand/875238/",
-      "source": "Supply Chain Dive",
-      "sourceConf": 85,
-      "feedTier": 2,
-      "publishedAt": "2026-11-20T15:19:00.000Z",
-      "ingestedAt": "2026-11-24T15:29:35.608Z",
-      "id": "a_29655ff5c7e3",
-      "steelStream": false,
-      "tags": [
-        "Iron Ore"
-      ],
-      "category": "Supplier Intelligence",
-      "urgency": "INFO",
       "costImpact": 1,
       "supplyRisk": 1,
       "urgencyScore": 2,
@@ -166,6 +166,33 @@
       "trending": false
     },
     {
+      "headline": "Procter & Gamble plans supply chain workforce cuts as automation expands",
+      "summary": "The CPG company expects to eliminate as much as 30% of its product-supply headcount by 2030.",
+      "url": "https://www.supplychaindive.com/news/procter-gamble-plans-supply-chain-workforce-cuts-as-automation-expands/875533/",
+      "source": "Supply Chain Dive",
+      "sourceConf": 85,
+      "feedTier": 2,
+      "publishedAt": "2026-11-24T17:11:00.000Z",
+      "ingestedAt": "2026-11-25T15:16:16.641Z",
+      "id": "a_314d4c50afa6",
+      "steelStream": false,
+      "tags": [
+        "Digital Procurement"
+      ],
+      "category": "Technology Intelligence",
+      "urgency": "MONITOR",
+      "costImpact": 3,
+      "supplyRisk": 1,
+      "urgencyScore": 3,
+      "strategic": 1,
+      "riskScore": 1,
+      "oppScore": 1,
+      "amnsScore": 50,
+      "amnsBand": "Low",
+      "breaking": false,
+      "trending": false
+    },
+    {
       "headline": "Tropical Smoothie powers expansion with strong supplier relationships, data strategy",
       "summary": "The smoothie chain aims to go beyond transactional purchasing and account manager connections to drive new products and mitigate risk.",
       "url": "https://www.supplychaindive.com/news/tropical-smoothie-powers-expansion-with-strong-supplier-relationships-data/875588/",
@@ -173,7 +200,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-24T15:01:00.000Z",
-      "ingestedAt": "2026-11-24T15:29:35.606Z",
+      "ingestedAt": "2026-11-25T15:16:16.641Z",
       "id": "a_b4bddb87bd7b",
       "steelStream": false,
       "tags": [
@@ -183,7 +210,7 @@
       "urgency": "MONITOR",
       "costImpact": 1,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 4,
       "riskScore": 1,
       "oppScore": 1,
