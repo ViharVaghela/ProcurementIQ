@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-11-25T15:16:16.983Z",
+  "__lastGoodGeneratedAt": "2026-11-26T14:41:55.473Z",
   "articles": [
     {
       "headline": "October 2026 crude steel production",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-24T09:02:29.000Z",
-      "ingestedAt": "2026-11-25T15:16:16.260Z",
+      "ingestedAt": "2026-11-26T14:41:54.609Z",
       "id": "a_1c599f36ffeb",
       "steelStream": true,
       "tags": [
@@ -38,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-25T07:14:18.000Z",
-      "ingestedAt": "2026-11-25T15:16:16.258Z",
+      "ingestedAt": "2026-11-26T14:41:54.607Z",
       "id": "a_33db51ec0f3a",
       "steelStream": true,
       "tags": [
@@ -48,7 +48,7 @@
       "urgency": "INFO",
       "costImpact": 2,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
@@ -65,7 +65,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-18T12:36:26.000Z",
-      "ingestedAt": "2026-11-25T15:16:16.260Z",
+      "ingestedAt": "2026-11-26T14:41:54.609Z",
       "id": "a_7ad0e5d768de",
       "steelStream": true,
       "tags": [
@@ -92,7 +92,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-18T12:20:48.000Z",
-      "ingestedAt": "2026-11-25T15:16:16.261Z",
+      "ingestedAt": "2026-11-26T14:41:54.610Z",
       "id": "a_b9dc1e2474eb",
       "steelStream": true,
       "tags": [
@@ -112,33 +112,6 @@
       "trending": false
     },
     {
-      "headline": "Taking the busywork out of business buying",
-      "summary": "Amazon Business brings inventory and procurement systems together to make business buying faster and more efficient",
-      "url": "https://www.supplychaindive.com/spons/taking-the-busywork-out-of-business-buying/874853/",
-      "source": "Supply Chain Dive",
-      "sourceConf": 85,
-      "feedTier": 2,
-      "publishedAt": "2026-11-23T10:00:00.000Z",
-      "ingestedAt": "2026-11-25T15:16:16.643Z",
-      "id": "a_d6d0bd1630f9",
-      "steelStream": false,
-      "tags": [
-        "Iron Ore"
-      ],
-      "category": "Risk Intelligence",
-      "urgency": "INFO",
-      "costImpact": 1,
-      "supplyRisk": 1,
-      "urgencyScore": 2,
-      "strategic": 1,
-      "riskScore": 1,
-      "oppScore": 1,
-      "amnsScore": 55,
-      "amnsBand": "Low",
-      "breaking": false,
-      "trending": false
-    },
-    {
       "headline": "Best Buy taps AI platform for supplier insights",
       "summary": "The retailer is teaming up with Circana to gain visibility for more effective planning and informed decisions.",
       "url": "https://www.supplychaindive.com/news/best-buy-taps-ai-platform-for-supplier-insights/875211/",
@@ -146,7 +119,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-23T16:05:59.000Z",
-      "ingestedAt": "2026-11-25T15:16:16.642Z",
+      "ingestedAt": "2026-11-26T14:41:55.084Z",
       "id": "a_d870f086c61d",
       "steelStream": false,
       "tags": [
@@ -166,6 +139,59 @@
       "trending": false
     },
     {
+      "headline": "US readies tariffs over manufacturing capacity, production concerns",
+      "summary": "The proposed levies, ranging from 15% to 35%, target goods from China, the European Union and 12 other partners following a Section 301 probe earlier this year.",
+      "url": "https://www.supplychaindive.com/news/us-readies-tariffs-over-manufacturing-capacity-production-concerns/875639/",
+      "source": "Supply Chain Dive",
+      "sourceConf": 85,
+      "feedTier": 2,
+      "publishedAt": "2026-11-25T16:34:26.000Z",
+      "ingestedAt": "2026-11-26T14:41:55.083Z",
+      "id": "a_95590f562075",
+      "steelStream": false,
+      "tags": [
+        "China",
+        "Trade Tariffs"
+      ],
+      "category": "Supplier Intelligence",
+      "urgency": "INFO",
+      "costImpact": 3,
+      "supplyRisk": 1,
+      "urgencyScore": 3,
+      "strategic": 1,
+      "riskScore": 1,
+      "oppScore": 1,
+      "amnsScore": 50,
+      "amnsBand": "Low",
+      "breaking": false,
+      "trending": false
+    },
+    {
+      "headline": "PETA alleges animal abuse in PepsiCo’s supply chain",
+      "summary": "The group submitted a proposal on behalf of two PepsiCo shareholders that alleges its sugar sourcing practices pose risks to animal welfare.",
+      "url": "https://www.supplychaindive.com/news/peta-alleges-animal-abuse-in-pepsicos-supply-chain/875654/",
+      "source": "Supply Chain Dive",
+      "sourceConf": 85,
+      "feedTier": 2,
+      "publishedAt": "2026-11-25T16:17:00.000Z",
+      "ingestedAt": "2026-11-26T14:41:55.083Z",
+      "id": "a_5723af7b1d8a",
+      "steelStream": false,
+      "tags": [],
+      "category": "Risk Intelligence",
+      "urgency": "INFO",
+      "costImpact": 1,
+      "supplyRisk": 1,
+      "urgencyScore": 3,
+      "strategic": 1,
+      "riskScore": 1,
+      "oppScore": 1,
+      "amnsScore": 50,
+      "amnsBand": "Low",
+      "breaking": false,
+      "trending": false
+    },
+    {
       "headline": "Procter & Gamble plans supply chain workforce cuts as automation expands",
       "summary": "The CPG company expects to eliminate as much as 30% of its product-supply headcount by 2030.",
       "url": "https://www.supplychaindive.com/news/procter-gamble-plans-supply-chain-workforce-cuts-as-automation-expands/875533/",
@@ -173,7 +199,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-24T17:11:00.000Z",
-      "ingestedAt": "2026-11-25T15:16:16.641Z",
+      "ingestedAt": "2026-11-26T14:41:55.083Z",
       "id": "a_314d4c50afa6",
       "steelStream": false,
       "tags": [
@@ -183,7 +209,7 @@
       "urgency": "MONITOR",
       "costImpact": 3,
       "supplyRisk": 1,
-      "urgencyScore": 3,
+      "urgencyScore": 2,
       "strategic": 1,
       "riskScore": 1,
       "oppScore": 1,
@@ -200,7 +226,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-24T15:01:00.000Z",
-      "ingestedAt": "2026-11-25T15:16:16.641Z",
+      "ingestedAt": "2026-11-26T14:41:55.084Z",
       "id": "a_b4bddb87bd7b",
       "steelStream": false,
       "tags": [
