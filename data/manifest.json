@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "generatedAt": "2026-11-27T14:39:41.311Z",
+  "generatedAt": "2026-11-28T13:51:21.105Z",
   "status": "degraded",
   "articleCount": 9,
   "publishedToday": 0,
@@ -15,7 +15,7 @@
     {
       "name": "worldsteel",
       "status": "live",
-      "lastSuccess": "2026-11-27T14:39:39.486Z",
+      "lastSuccess": "2026-11-28T13:51:19.564Z",
       "reason": null,
       "itemsKept": 4
     },
@@ -36,7 +36,7 @@
     {
       "name": "Supply Chain Dive",
       "status": "live",
-      "lastSuccess": "2026-11-27T14:39:39.486Z",
+      "lastSuccess": "2026-11-28T13:51:19.564Z",
       "reason": null,
       "itemsKept": 5
     },

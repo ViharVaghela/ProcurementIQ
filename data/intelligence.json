@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.1",
-  "__lastGoodGeneratedAt": "2026-11-27T14:39:41.311Z",
+  "__lastGoodGeneratedAt": "2026-11-28T13:51:21.105Z",
   "articles": [
     {
       "headline": "October 2026 crude steel production",
@@ -10,7 +10,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-24T09:02:29.000Z",
-      "ingestedAt": "2026-11-27T14:39:40.386Z",
+      "ingestedAt": "2026-11-28T13:51:20.399Z",
       "id": "a_1c599f36ffeb",
       "steelStream": true,
       "tags": [
@@ -38,7 +38,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-25T07:14:18.000Z",
-      "ingestedAt": "2026-11-27T14:39:40.384Z",
+      "ingestedAt": "2026-11-28T13:51:20.396Z",
       "id": "a_33db51ec0f3a",
       "steelStream": true,
       "tags": [
@@ -65,7 +65,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-18T12:36:26.000Z",
-      "ingestedAt": "2026-11-27T14:39:40.386Z",
+      "ingestedAt": "2026-11-28T13:51:20.400Z",
       "id": "a_7ad0e5d768de",
       "steelStream": true,
       "tags": [
@@ -92,7 +92,7 @@
       "sourceConf": 91,
       "feedTier": 1,
       "publishedAt": "2026-11-18T12:20:48.000Z",
-      "ingestedAt": "2026-11-27T14:39:40.386Z",
+      "ingestedAt": "2026-11-28T13:51:20.400Z",
       "id": "a_b9dc1e2474eb",
       "steelStream": true,
       "tags": [
@@ -119,7 +119,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-23T16:05:59.000Z",
-      "ingestedAt": "2026-11-27T14:39:40.888Z",
+      "ingestedAt": "2026-11-28T13:51:20.723Z",
       "id": "a_d870f086c61d",
       "steelStream": false,
       "tags": [
@@ -146,7 +146,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-25T16:34:26.000Z",
-      "ingestedAt": "2026-11-27T14:39:40.887Z",
+      "ingestedAt": "2026-11-28T13:51:20.721Z",
       "id": "a_95590f562075",
       "steelStream": false,
       "tags": [
@@ -174,7 +174,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-25T16:17:00.000Z",
-      "ingestedAt": "2026-11-27T14:39:40.887Z",
+      "ingestedAt": "2026-11-28T13:51:20.721Z",
       "id": "a_5723af7b1d8a",
       "steelStream": false,
       "tags": [],
@@ -199,7 +199,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-24T17:11:00.000Z",
-      "ingestedAt": "2026-11-27T14:39:40.887Z",
+      "ingestedAt": "2026-11-28T13:51:20.722Z",
       "id": "a_314d4c50afa6",
       "steelStream": false,
       "tags": [
@@ -226,7 +226,7 @@
       "sourceConf": 85,
       "feedTier": 2,
       "publishedAt": "2026-11-24T15:01:00.000Z",
-      "ingestedAt": "2026-11-27T14:39:40.888Z",
+      "ingestedAt": "2026-11-28T13:51:20.723Z",
       "id": "a_b4bddb87bd7b",
       "steelStream": false,
       "tags": [
